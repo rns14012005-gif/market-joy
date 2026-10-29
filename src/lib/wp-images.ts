@@ -12,6 +12,7 @@ export function wpImgOnError(e: { currentTarget: HTMLImageElement }) {
   const src = img.getAttribute("src") ?? "";
   if (src.startsWith("/wp-content/") && !img.dataset.wpRetry) {
     img.dataset.wpRetry = "1";
+    img.referrerPolicy = "no-referrer";
     img.removeAttribute("srcset");
     img.src = wpFallbackSrc(src);
   } else {

@@ -18,13 +18,66 @@ export function Hero({
   sub,
   date,
   crumbs,
+  image,
 }: {
   eyebrow: string;
   title: string;
   sub?: string | undefined;
   date?: string | undefined;
   crumbs: { label: string; href?: string }[];
+  /** Static photo background. When set, the animated canvas and text reveal effects are not used. */
+  image?: string | undefined;
 }) {
+  if (image) {
+    return (
+      <section className="relative isolate overflow-hidden bg-navy-deep text-navy-foreground">
+        <img
+          src={image}
+          alt=""
+          aria-hidden="true"
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-[70%_center] lg:object-right"
+        />
+        {/* Keeps the text readable on narrow screens where the text sits over the photo. */}
+        <div
+          className="absolute inset-0 -z-10 bg-gradient-to-r from-navy-deep/90 via-navy-deep/60 to-navy-deep/20 lg:from-navy-deep/40 lg:via-transparent lg:to-transparent"
+          aria-hidden="true"
+        />
+        <div className="mx-auto flex min-h-[300px] max-w-7xl flex-col justify-center px-4 py-12 sm:min-h-[360px] sm:px-6 lg:min-h-[420px] lg:py-16">
+          <nav
+            aria-label="Breadcrumb"
+            className="mb-6 flex flex-wrap items-center gap-1 text-xs text-navy-foreground/70"
+          >
+            <a href="/" className="hover:text-gold">
+              Home
+            </a>
+            {crumbs.map((c) => (
+              <span key={c.label} className="inline-flex items-center gap-1">
+                <ChevronRight className="h-3 w-3" />
+                {c.href ? (
+                  <a href={c.href} className="hover:text-gold">
+                    {c.label}
+                  </a>
+                ) : (
+                  <span className="line-clamp-1 max-w-[16rem] text-navy-foreground sm:max-w-md">
+                    {c.label}
+                  </span>
+                )}
+              </span>
+            ))}
+          </nav>
+          <span className="eyebrow">{eyebrow}</span>
+          <h1 className="mt-4 max-w-2xl text-[1.75rem] font-extrabold leading-[1.15] min-[400px]:text-3xl sm:text-4xl lg:text-[2.75rem]">
+            {title}
+          </h1>
+          {sub && (
+            <p className="mt-5 max-w-xl text-base text-navy-foreground/85 sm:text-lg">{sub}</p>
+          )}
+        </div>
+      </section>
+    );
+  }
   return (
     <section className="relative isolate overflow-hidden bg-navy text-navy-foreground">
       <div className="absolute inset-0 -z-20">
