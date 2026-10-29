@@ -6,6 +6,8 @@ import { VendorPageView } from "@/components/pages/VendorPages";
 import { JoypediaEntryPage, JoypediaListing } from "@/components/pages/JoypediaPages";
 import { ContentEntryPage, ContentListing } from "@/components/pages/ContentPages";
 import { IndustryEntryPage } from "@/components/pages/IndustryPages";
+import { ServiceEntryPage } from "@/components/pages/ServicePages";
+import { loadServiceByPath, PRODUCT_META, SERVICES_INDEX } from "@/content/services/loader";
 import { loadIndustryByPath } from "@/content/industries/loader";
 import { FAQS } from "@/components/home/data";
 import { findSummary, loadPost } from "@/data/blog/blog";
@@ -19,6 +21,9 @@ import {
   faqSchema,
   breadcrumbSchema,
   blogPostingSchema,
+  productServiceSchema,
+  productsHubSchema,
+  OG_IMAGE,
   absUrl,
   SITE_URL,
 } from "@/lib/seo";
@@ -26,7 +31,7 @@ import {
 type Params = { _splat?: string; "*"?: string };
 const splatOf = (p: Params) => p._splat ?? p["*"] ?? "";
 // Every loader branch returns the same keys (TypeScript needs a consistent shape).
-const NONE = { industry: null, post: null, vendor: null, term: null, cptType: null, entry: null, crumb: null } as const;
+const NONE = { industry: null, service: null, post: null, vendor: null, term: null, cptType: null, entry: null, crumb: null } as const;
 
 export const Route = createFileRoute("/$")({
   loader: async ({ params }) => {
@@ -112,6 +117,21 @@ export const Route = createFileRoute("/$")({
       }
     }
 
+    // Migrated WordPress service + product pages: /b2b-list-building-services/, /products/infojoy/ ...
+    const service = await loadServiceByPath(splat);
+    if (service) {
+      return {
+        ...NONE,
+        path: service.path,
+        kind: "service-entry" as string,
+        title: service.seo.title ?? service.title,
+        description: service.seo.description ?? "",
+        parent: service.kind === "product" && service.path !== "/products/" ? { label: "Products", href: "/products/" } : null,
+        service,
+        crumb: PRODUCT_META[service.path]?.label ?? service.title,
+      };
+    }
+
     const blog = /^blog\/([^/]+)$/.exec(splat);
     if (blog?.[1]) {
       const post = await loadPost(blog[1]);
@@ -159,7 +179,7 @@ export const Route = createFileRoute("/$")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) return {};
-    const ind = loaderData.industry;
+    const ind = loaderData.industry ?? loaderData.service;
     // Industry pages keep their exact old Rank Math title; everything else gets the site suffix.
     const title =
       ind || /marketjoy/i.test(loaderData.title) ? loaderData.title : `${loaderData.title} | MarketJoy`;
@@ -176,7 +196,14 @@ export const Route = createFileRoute("/$")({
           }
         : {}),
       ...(ind
-        ? { type: "article" as const, ...(ind.seo.ogImage ? { image: absUrl(ind.seo.ogImage).replace(/\/$/, "") } : {}) }
+        ? {
+            ...(loaderData.service ? {} : { type: "article" as const }),
+            ...(ind.seo.ogImage
+              ? { image: absUrl(ind.seo.ogImage).replace(/\/$/, "") }
+              : loaderData.service
+                ? { image: OG_IMAGE } // services/products without a Rank Math social image still get a share card
+                : {}),
+          }
         : {}),
     });
     const toUrl = (href: string) => (/^https?:/.test(href) ? href : absUrl(href));
@@ -193,6 +220,10 @@ export const Route = createFileRoute("/$")({
     // FAQ schema only where the FAQs are visible: the full FAQ page shows all, service/product pages show the first 4.
     if (ind?.seo.robots && /noindex/i.test(ind.seo.robots)) meta.push({ name: "robots", content: ind.seo.robots } as never);
     if (ind) meta.push({ name: "twitter:card", content: "summary_large_image" } as never);
+    const svc = loaderData.service;
+    if (svc?.seo.ogImageAlt) meta.push({ property: "og:image:alt", content: svc.seo.ogImageAlt } as never);
+    if (svc?.seo.modified) meta.push({ property: "og:updated_time", content: svc.seo.modified } as never);
+    const productMeta = svc ? PRODUCT_META[svc.path] : undefined;
     const faqs =
       ind ? ind.faqs.map((f) => ({ q: f.q, a: f.a })) : loaderData.kind === "faqs"
         ? FAQS
@@ -225,7 +256,7 @@ export const Route = createFileRoute("/$")({
           ? [
               jsonLd({
                 "@context": "https://schema.org",
-                "@type": "Article",
+                "@type": loaderData.service ? "WebPage" : "Article",
                 headline: ind.title,
                 description: ind.seo.description,
                 url: absUrl(ind.path),
@@ -234,6 +265,30 @@ export const Route = createFileRoute("/$")({
                 ...(ind.seo.ogImage ? { image: absUrl(ind.seo.ogImage).replace(/\/$/, "") } : {}),
                 publisher: { "@type": "Organization", name: "MarketJoy, Inc.", url: SITE_URL },
               }),
+            ]
+          : []),
+        // Product pages: /products/ is a CollectionPage, each product a Service (see lib/seo.ts).
+        ...(svc && productMeta
+          ? [
+              jsonLd(
+                svc.path === "/products/"
+                  ? productsHubSchema({
+                      name: svc.seo.title ?? svc.title,
+                      description: svc.seo.description ?? "",
+                      path: svc.path,
+                      items: SERVICES_INDEX.filter((i) => i.parent === "/products/").map((i) => ({
+                        name: PRODUCT_META[i.path]?.label ?? i.title,
+                        path: i.path,
+                      })),
+                    })
+                  : productServiceSchema({
+                      name: productMeta.label,
+                      description: svc.seo.description ?? "",
+                      path: svc.path,
+                      serviceType: productMeta.serviceType,
+                      image: absUrl(svc.seo.ogImage || "/og-image.png").replace(/\/$/, ""),
+                    }),
+              ),
             ]
           : []),
         // Vendor pages show their FAQs in an accordion, so the FAQ schema matches visible content.
@@ -245,7 +300,8 @@ export const Route = createFileRoute("/$")({
 });
 
 function Page() {
-  const { path, post, vendor, term, kind, cptType, entry, industry } = Route.useLoaderData();
+  const { path, post, vendor, term, kind, cptType, entry, industry, service } = Route.useLoaderData();
+  if (kind === "service-entry" && service) return <ServiceEntryPage entry={service} />;
   if (kind === "industry-entry" && industry) return <IndustryEntryPage entry={industry} />;
   if (post) return <BlogPostPage post={post} />;
   if (vendor) return <VendorPageView vendor={vendor} />;

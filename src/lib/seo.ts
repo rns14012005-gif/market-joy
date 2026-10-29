@@ -119,3 +119,29 @@ export const blogPostingSchema = (p: {
     logo: { "@type": "ImageObject", url: `${SITE_URL}/apple-touch-icon.png` },
   },
 });
+
+/** schema.org Service for one product page (no invented prices or ratings). */
+export const productServiceSchema = (p: { name: string; description: string; path: string; serviceType: string; image?: string }) => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: p.name,
+  description: p.description,
+  url: absUrl(p.path),
+  serviceType: p.serviceType,
+  ...(p.image ? { image: p.image } : {}),
+  provider: { "@type": "Organization", name: "MarketJoy, Inc.", url: SITE_URL },
+});
+
+/** /products/ hub: a CollectionPage listing every product. */
+export const productsHubSchema = (p: { name: string; description: string; path: string; items: readonly { name: string; path: string }[] }) => ({
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: p.name,
+  description: p.description,
+  url: absUrl(p.path),
+  isPartOf: { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: p.items.map((i, n) => ({ "@type": "ListItem", position: n + 1, name: i.name, url: absUrl(i.path) })),
+  },
+});

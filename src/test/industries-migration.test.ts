@@ -13,3 +13,16 @@ describe("industries migration", () => {
     }
   });
 });
+
+describe("industries FAQ accordions", () => {
+  it("keep every answer inside its <details> and leave no stray copies between items", async () => {
+    for (const i of INDUSTRIES_INDEX) {
+      const e = (await loadIndustryByPath(i.path))!;
+      const open = (e.html.match(/<details/g) ?? []).length;
+      expect(e.faqs.length, i.path).toBe(open);
+      // </details> followed by plain <p>/<ul> text and then another <details> = a stray answer copy
+      expect(e.html, i.path).not.toMatch(/<\/details>\s*<(p|ul|ol)[\s>][^]*?<details/);
+      for (const f of e.faqs) expect(f.a.length, `${i.path}: ${f.q}`).toBeGreaterThan(10);
+    }
+  });
+});

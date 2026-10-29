@@ -264,6 +264,12 @@ export const PRODUCTS = [
     desc: "Identify and prioritize prospects actively researching solutions like yours, so your team engages at the right time.",
     href: `${MJ}/products/buyer-intent/`,
   },
+  {
+    key: "traffic",
+    title: "Web Traffic Revealer",
+    desc: "Reveal the anonymous companies visiting your website and turn that hidden traffic into qualified sales conversations.",
+    href: `${MJ}/products/web-traffic-revealer/`,
+  },
 ] as const;
 
 export const FEATURES = [

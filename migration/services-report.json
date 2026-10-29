@@ -1,0 +1,557 @@
+[
+ {
+  "path": "/ai-seo-services/",
+  "wpId": 17748,
+  "seoTitle": "AI SEO Services to Improve Rankings & AI Visibility | MarketJoy",
+  "seoDescriptionChars": 136,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-23.14.24.png",
+  "htmlChars": 13664,
+  "h2": 9,
+  "faqs": 0,
+  "images": 27,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "style": 10,
+   "button": 5
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/ai-powered-lead-generation-b2b-sales/",
+   "/digital-marketing/",
+   "/top-10-lead-generation-companies-usa/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/ai-powered-lead-generation-b2b-sales/",
+   "/top-10-lead-generation-companies-usa/"
+  ]
+ },
+ {
+  "path": "/answer-engine-optimization-services/",
+  "wpId": 17883,
+  "seoTitle": "Answer Engine Optimization Services | MarketJoy",
+  "seoDescriptionChars": 157,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2026/07/laptop-02-1.webp",
+  "htmlChars": 12265,
+  "h2": 12,
+  "faqs": 0,
+  "images": 9,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "style": 13,
+   "button": 5,
+   "img(broken relative src)": 10,
+   "repeated block": 1
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/ai-driven-outbound-how-machine-learning-predicts-which-prospects-will-reply/",
+   "/digital-marketing/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/ai-driven-outbound-how-machine-learning-predicts-which-prospects-will-reply/"
+  ]
+ },
+ {
+  "path": "/appointment-generation-setting/",
+  "wpId": 13938,
+  "seoTitle": "Appointment Generation & Setting Services | B2B Appointment",
+  "seoDescriptionChars": 157,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": null,
+  "htmlChars": 8732,
+  "h2": 22,
+  "faqs": 5,
+  "images": 12,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 21,
+   "faq answer copies outside accordion": 5
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/",
+   "/contact-us/",
+   "/lead-generation-companies/",
+   "/top-10-lead-generation-companies-usa/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/",
+   "/contact-us/",
+   "/lead-generation-companies/",
+   "/top-10-lead-generation-companies-usa/"
+  ]
+ },
+ {
+  "path": "/b2b-lead-generation-services/",
+  "wpId": 23272,
+  "seoTitle": "B2B Lead Generation Services That Drive Qualified Leads | MarketJoy",
+  "seoDescriptionChars": 167,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/10/chart-600.webp",
+  "htmlChars": 8199,
+  "h2": 12,
+  "faqs": 4,
+  "images": 9,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "style": 3,
+   "faq answer copies outside accordion": 2,
+   "step-number heading": 4
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/",
+   "/top-10-lead-generation-companies-usa/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/",
+   "/top-10-lead-generation-companies-usa/"
+  ]
+ },
+ {
+  "path": "/b2b-list-building-services/",
+  "wpId": 8956,
+  "seoTitle": "Custom B2B List Building Services | List Building Services",
+  "seoDescriptionChars": 150,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2025/08/b2b-list-building.png",
+  "htmlChars": 14002,
+  "h2": 14,
+  "faqs": 8,
+  "images": 24,
+  "altFilledFromMediaLibrary": 15,
+  "dropped": {
+   "svg": 21,
+   "button": 16,
+   "faq answer copies outside accordion": 8,
+   "repeated block": 9,
+   "repeated image": 7
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/",
+   "/b2b-list-building-services-guide/",
+   "/buyer-intent/",
+   "/targeted-b2b-list-building-buyers/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/",
+   "/b2b-list-building-services-guide/",
+   "/buyer-intent/",
+   "/targeted-b2b-list-building-buyers/"
+  ]
+ },
+ {
+  "path": "/digital-marketing/",
+  "wpId": 11631,
+  "seoTitle": "Digital Marketing Services | Lead Generation | MarketJoy",
+  "seoDescriptionChars": 156,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/07/digital-marketing.webp",
+  "htmlChars": 13083,
+  "h2": 20,
+  "faqs": 5,
+  "images": 7,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 78,
+   "faq answer copies outside accordion": 5,
+   "repeated block": 3
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/answer-engine-optimization-services/",
+   "/case-studies/",
+   "/digital-marketing-services-leads-sales/",
+   "/generative-engine-optimization-services/",
+   "/industries/business-consulting-lead-generation/",
+   "/industries/fintech-lead-generation/",
+   "/industries/high-tech-and-software-lead-generation/",
+   "/industries/manufacturing-lead-generation/",
+   "/industries/medical-healthcare-lead-generation/",
+   "/industries/shipping-and-supply-chain-logistics-lead-generation/",
+   "/omnichannel-marketing-services/",
+   "/top-10-lead-generation-companies-usa/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/case-studies/",
+   "/digital-marketing-services-leads-sales/",
+   "/industries/business-consulting-lead-generation/",
+   "/industries/fintech-lead-generation/",
+   "/industries/high-tech-and-software-lead-generation/",
+   "/industries/manufacturing-lead-generation/",
+   "/industries/medical-healthcare-lead-generation/",
+   "/industries/shipping-and-supply-chain-logistics-lead-generation/",
+   "/top-10-lead-generation-companies-usa/"
+  ]
+ },
+ {
+  "path": "/finance-and-accounting-outsourcing-services/",
+  "wpId": 16665,
+  "seoTitle": "Finance and Accounting Outsourcing Services | MarketJoy",
+  "seoDescriptionChars": 173,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/06/Build-a-Smarter-Finance-Function-with-MarketJoy.png",
+  "htmlChars": 7757,
+  "h2": 7,
+  "faqs": 5,
+  "images": 3,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "faq answer copies outside accordion": 5
+  },
+  "shortcodes": [],
+  "internalLinks": [],
+  "internalLinksNotInIndustries": []
+ },
+ {
+  "path": "/generative-engine-optimization-services/",
+  "wpId": 18215,
+  "seoTitle": "Generative Engine Optimization Services for AI Search | MarketJoy",
+  "seoDescriptionChars": 156,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/07/4543-1.png",
+  "htmlChars": 13547,
+  "h2": 18,
+  "faqs": 0,
+  "images": 15,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "style": 12,
+   "img(not a media file)": 1,
+   "repeated block": 1
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/ai-powered-lead-generation-b2b-sales/",
+   "/digital-marketing/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/ai-powered-lead-generation-b2b-sales/"
+  ]
+ },
+ {
+  "path": "/guaranteed-sales-qualified-leads/",
+  "wpId": 21604,
+  "seoTitle": "B2B Lead Generation | MarketJoy",
+  "seoDescriptionChars": 147,
+  "titleHadVariables": false,
+  "robots": "nofollow, noindex",
+  "ogImage": "/wp-content/uploads/2026/09/security.png",
+  "htmlChars": 22958,
+  "h2": 63,
+  "faqs": 13,
+  "images": 10,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 50,
+   "style": 1,
+   "img(data-uri)": 13,
+   "faq answer copies outside accordion": 14,
+   "step-number heading": 8,
+   "repeated block": 2
+  },
+  "shortcodes": [
+   "contact-form-7",
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/",
+   "/contact-us/",
+   "/privacy-policy/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/",
+   "/contact-us/",
+   "/privacy-policy/"
+  ]
+ },
+ {
+  "path": "/lead-generation-services-v1/",
+  "wpId": 601,
+  "seoTitle": "Targeted Lead Generation Services | B2B Leads | MarketJoy",
+  "seoDescriptionChars": 157,
+  "titleHadVariables": false,
+  "robots": "noindex",
+  "ogImage": "/wp-content/uploads/2023/05/Group-530-1.png",
+  "htmlChars": 15913,
+  "h2": 12,
+  "faqs": 0,
+  "images": 32,
+  "altFilledFromMediaLibrary": 29,
+  "dropped": {
+   "svg": 17,
+   "style": 4
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/what-our-clients-say/",
+   "/wp-content/uploads/2023/04/Client-logo-10.png",
+   "/wp-content/uploads/2023/04/Client-logo-11.png",
+   "/wp-content/uploads/2023/04/Client-logo-12.png",
+   "/wp-content/uploads/2023/04/Client-logo-17.png",
+   "/wp-content/uploads/2023/04/Client-logo-18.png",
+   "/wp-content/uploads/2023/04/Client-logo-19.png",
+   "/wp-content/uploads/2023/04/Client-logo-21.png",
+   "/wp-content/uploads/2023/04/Client-logo-25.png",
+   "/wp-content/uploads/2023/04/Client-logo-27.png",
+   "/wp-content/uploads/2023/04/Client-logo-7.png",
+   "/wp-content/uploads/2023/04/Client-logo-8.png",
+   "/wp-content/uploads/2023/04/Client-logo-9.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim-1-App.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim-1.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim-2.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim-3.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim-4.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim.png"
+  ],
+  "internalLinksNotInIndustries": [
+   "/what-our-clients-say/",
+   "/wp-content/uploads/2023/04/Client-logo-10.png",
+   "/wp-content/uploads/2023/04/Client-logo-11.png",
+   "/wp-content/uploads/2023/04/Client-logo-12.png",
+   "/wp-content/uploads/2023/04/Client-logo-17.png",
+   "/wp-content/uploads/2023/04/Client-logo-18.png",
+   "/wp-content/uploads/2023/04/Client-logo-19.png",
+   "/wp-content/uploads/2023/04/Client-logo-21.png",
+   "/wp-content/uploads/2023/04/Client-logo-25.png",
+   "/wp-content/uploads/2023/04/Client-logo-27.png",
+   "/wp-content/uploads/2023/04/Client-logo-7.png",
+   "/wp-content/uploads/2023/04/Client-logo-8.png",
+   "/wp-content/uploads/2023/04/Client-logo-9.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim-1-App.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim-1.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim-2.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim-3.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim-4.png",
+   "/wp-content/uploads/2023/04/imgpsh_fullsize_anim.png"
+  ]
+ },
+ {
+  "path": "/omnichannel-marketing-services/",
+  "wpId": 18363,
+  "seoTitle": "Omnichannel Marketing Services for B2B Growth | MarketJoy",
+  "seoDescriptionChars": 147,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2026/07/456375-1.png",
+  "htmlChars": 9574,
+  "h2": 11,
+  "faqs": 0,
+  "images": 12,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "style": 10
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/12-ways-to-generate-sales-qualified-leads-sqls-faster/",
+   "/answer-engine-optimization-services/",
+   "/generative-engine-optimization-services/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/12-ways-to-generate-sales-qualified-leads-sqls-faster/"
+  ]
+ },
+ {
+  "path": "/outbound-sdr-services/",
+  "wpId": 14366,
+  "seoTitle": "Outbound SDR Services for B2B Businesses | MarketJoy",
+  "seoDescriptionChars": 155,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/04/Group-1000001749.webp",
+  "htmlChars": 7721,
+  "h2": 25,
+  "faqs": 5,
+  "images": 13,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 24,
+   "faq answer copies outside accordion": 5,
+   "empty 'latest' widget heading": 1,
+   "repeated block": 3
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/",
+   "/contact-us/",
+   "/marketjoy-predictable-sales-pipeline/",
+   "/what-is-an-sql-and-why-it-matters-more-than-mql-in-b2b-sales/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/",
+   "/contact-us/",
+   "/marketjoy-predictable-sales-pipeline/",
+   "/what-is-an-sql-and-why-it-matters-more-than-mql-in-b2b-sales/"
+  ]
+ },
+ {
+  "path": "/products/",
+  "wpId": 10466,
+  "seoTitle": "MarketJoy Products – Tools for Easier, More Effective B2B Prospecting",
+  "seoDescriptionChars": 168,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2025/11/product-banner.png",
+  "htmlChars": 4116,
+  "h2": 15,
+  "faqs": 0,
+  "images": 11,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {},
+  "shortcodes": [],
+  "internalLinks": [
+   "/buyer-intent/",
+   "/industries/business-consulting-lead-generation/",
+   "/industries/fintech-lead-generation/",
+   "/industries/high-tech-and-software-lead-generation/",
+   "/industries/manufacturing-lead-generation/",
+   "/industries/medical-healthcare-lead-generation/",
+   "/industries/shipping-and-supply-chain-logistics-lead-generation/",
+   "/infojoy/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/buyer-intent/",
+   "/industries/business-consulting-lead-generation/",
+   "/industries/fintech-lead-generation/",
+   "/industries/high-tech-and-software-lead-generation/",
+   "/industries/manufacturing-lead-generation/",
+   "/industries/medical-healthcare-lead-generation/",
+   "/industries/shipping-and-supply-chain-logistics-lead-generation/",
+   "/infojoy/"
+  ]
+ },
+ {
+  "path": "/products/buyer-intent/",
+  "wpId": 10021,
+  "seoTitle": "B2B Buyer Intent Data to identify & convert leads | MarketJoy",
+  "seoDescriptionChars": 140,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2025/11/marketjoy-benifits.jpg",
+  "htmlChars": 6005,
+  "h2": 9,
+  "faqs": 7,
+  "images": 4,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 29,
+   "faq answer copies outside accordion": 7
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/what-is-buyer-intent-data-why-its-a-game-changer-for-b2b-lead-generation/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/what-is-buyer-intent-data-why-its-a-game-changer-for-b2b-lead-generation/"
+  ]
+ },
+ {
+  "path": "/products/infojoy/",
+  "wpId": 9813,
+  "seoTitle": "B2B Buyer Intent Prospecting Platform Powered by AI | InfoJoy",
+  "seoDescriptionChars": 145,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": null,
+  "htmlChars": 6898,
+  "h2": 9,
+  "faqs": 5,
+  "images": 11,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 28,
+   "faq answer copies outside accordion": 5,
+   "orphan text between faq items": 1,
+   "step-number heading": 5
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/ai-driven-outbound-how-machine-learning-predicts-which-prospects-will-reply/",
+   "/buyer-intent-data-helps-convert-high-value-prospects/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/ai-driven-outbound-how-machine-learning-predicts-which-prospects-will-reply/",
+   "/buyer-intent-data-helps-convert-high-value-prospects/"
+  ]
+ },
+ {
+  "path": "/products/web-traffic-revealer/",
+  "wpId": 10635,
+  "seoTitle": "Web Traffic Revealer | Reveal Anonymous Website Visitors for leads",
+  "seoDescriptionChars": 150,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2025/11/banner-image.webp",
+  "htmlChars": 10938,
+  "h2": 24,
+  "faqs": 9,
+  "images": 21,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 28,
+   "faq answer copies outside accordion": 9,
+   "repeated block": 1
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/buyer-intent-data-helps-convert-high-value-prospects/",
+   "/contact-us/",
+   "/products/buyer-intent/",
+   "/sales-qualified-leads-sql-services/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/buyer-intent-data-helps-convert-high-value-prospects/",
+   "/contact-us/",
+   "/sales-qualified-leads-sql-services/"
+  ]
+ },
+ {
+  "path": "/salesfacilitation/",
+  "wpId": 14038,
+  "seoTitle": "Sales Facilitation Services for B2B Revenue Growth",
+  "seoDescriptionChars": 151,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/03/Group-1000001723-1.webp",
+  "htmlChars": 9693,
+  "h2": 37,
+  "faqs": 5,
+  "images": 19,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 22,
+   "faq answer copies outside accordion": 5,
+   "step-number heading": 6,
+   "repeated block": 9
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/align-sales-and-marketing-strategies-to-boost-revenue/",
+   "/sales-facilitation-marketjoy-customer-acquisition/",
+   "/top-10-lead-generation-challenges-b2b-companies-face/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/align-sales-and-marketing-strategies-to-boost-revenue/",
+   "/sales-facilitation-marketjoy-customer-acquisition/",
+   "/top-10-lead-generation-challenges-b2b-companies-face/"
+  ]
+ }
+]

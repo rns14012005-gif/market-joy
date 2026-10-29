@@ -69,6 +69,45 @@ KEEP = {"h1","h2","h3","h4","h5","h6","p","ul","ol","li","a","img","strong","em"
 ATTR = {"a": {"href","title","target","rel"}, "img": {"src","alt","width","height","loading","decoding"}}
 DROP = ["svg","script","style","noscript","iframe","form","button","input","select","textarea","video","audio","canvas","object","embed"]
 
+def _q(t):  # compare text ignoring curly vs straight quotes and spacing
+    return norm((t or "").replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"').replace("\u00a0", " ")).lower()
+
+def fix_faq(root, stats):
+    """Elementor FAQ accordions: the answer is bare text after <summary>, and the same answers are repeated as plain text
+    *outside* the accordion (sometimes between items, sometimes several answers joined in one paragraph). Wrap the answer
+    in <p> and remove the outside copies."""
+    for d in root.iter("details"):
+        s = d.find("summary")
+        if s is not None and s.tail and norm(s.tail):
+            np_ = LH.Element("p"); np_.text = s.tail.strip(); s.tail = None; s.addnext(np_)
+    answers = []
+    for d in root.iter("details"):
+        s = d.find("summary")
+        a = _q(" ".join(c.text_content() for c in d if c is not s))
+        if a: answers.append(a)
+    if not answers: return
+    blob = " ".join(answers)
+    removed = 0
+    for el in list(root.iter("p", "ul", "ol", "div")):
+        if el.getparent() is None or any(a.tag == "details" for a in el.iterancestors()) or el.tag == "details": continue
+        if el.tag == "div" and any(c.tag in ("p", "ul", "ol", "div", "details", "h2", "h3") for c in el): continue
+        t = _q(el.text_content())
+        if len(t) < 20: continue
+        rest = t
+        for a in sorted(answers, key=len, reverse=True): rest = rest.replace(a, " ")
+        if t in blob or len(rest.strip()) <= 3:
+            el.drop_tree(); removed += 1
+    if removed: stats["dropped"]["faq answer copies outside accordion"] = removed
+    # anything left sitting *between* accordion items is an orphaned answer (its question was removed on the old site)
+    dets = list(root.iter("details"))
+    if dets:
+        for par in {d.getparent() for d in dets if d.getparent() is not None}:
+            kids = list(par); idx = [i for i, k in enumerate(kids) if k.tag == "details"]
+            for i in range(min(idx), max(idx) + 1):
+                if kids[i].tag in ("p", "ul", "ol", "div"):
+                    stats["dropped"]["orphan text between faq items"] = stats["dropped"].get("orphan text between faq items", 0) + 1
+                    kids[i].drop_tree()
+
 def clean(raw, stats):
     # Shortcodes: the form gets a link to the contact page; others are removed.
     def sc(m):
@@ -106,6 +145,8 @@ def clean(raw, stats):
     h1 = root.find(".//h1")
     h1_text = norm(h1.text_content()) if h1 is not None else ""
     if h1 is not None: h1.drop_tree()
+    # the page hero already renders the one <h1>; any further <h1> inside the old Elementor body becomes <h2>
+    for extra in list(root.iter("h1")): extra.tag = "h2"
     # drop empty wrappers/paragraphs (repeat: removing a child can empty its parent)
     for _ in range(4):
         for el in list(root.iter("div", "span", "section", "p", "li", "ul", "ol", "a", "strong", "em", "b", "i")):
@@ -117,16 +158,8 @@ def clean(raw, stats):
         nxt = h.getnext()
         if re.match(r"(?i)our latest\b", norm(h.text_content())) and (nxt is None or nxt.tag in ("h1", "h2", "h3")):
             h.drop_tree(); stats["dropped"]["empty 'latest' widget heading"] = stats["dropped"].get("empty 'latest' widget heading", 0) + 1
-    # Elementor appends a plain-text copy of the FAQ answers after the accordion; remove exact duplicates.
-    details = list(root.iter("details"))
-    if details:
-        blob = norm(" ".join(d.text_content() for d in details))
-        last = details[-1]
-        removed = 0
-        for sib in list(last.itersiblings()):
-            if sib.tag in ("p", "ul", "ol") and norm(sib.text_content()) and norm(sib.text_content()) in blob:
-                sib.drop_tree(); removed += 1
-        if removed: stats["dropped"]["duplicate faq text"] = removed
+    fix_faq(root, stats)
+    dedupe(root, stats)
     out = "".join(LH.tostring(c, encoding="unicode") for c in root)
     out = re.sub(r"[ \t]*\n[ \t\n]*", "\n", out).strip()
     if root.text and norm(root.text): out = htmlmod.escape(norm(root.text)) + out
@@ -137,6 +170,54 @@ def clean(raw, stats):
         a = norm(" ".join(c.text_content() for c in d if c is not s))
         if q and a: faqs.append({"q": q, "a": a})
     return out, h1_text, faqs
+
+def dedupe(root, stats):
+    """Elementor repeats blocks (desktop/mobile/tab variants). Keep the first occurrence only."""
+    cand = []
+    def drop(el, why):
+        stats["dropped"][why] = stats["dropped"].get(why, 0) + 1
+        for nb in ("getprevious", "getnext"):  # images hanging off a repeated block go with it (if they are repeats too)
+            x = getattr(el, nb)()
+            while x is not None and x.tag == "img":
+                cand.append(x); x = getattr(x, nb)()
+        el.drop_tree()
+    # decorative step counters ("01", "02") rendered as headings
+    for h in list(root.iter("h1", "h2", "h3", "h4")):
+        if re.fullmatch(r"\d{1,2}", norm(h.text_content())): drop(h, "step-number heading")
+    # exact repeats of headings / paragraphs / lists (first one wins). A short line that repeats inside a *different*
+    # section is kept; it is only dropped when it belongs to a section whose heading was itself a repeat.
+    seen, in_dropped = set(), False
+    for el in list(root.iter("h2", "h3", "h4", "p", "ul", "ol")):
+        if any(a.tag == "details" for a in el.iterancestors()): continue
+        if el.getparent() is None: continue
+        t = norm(el.text_content())
+        is_h = el.tag in ("h2", "h3", "h4")
+        if len(t) < (8 if is_h else 25): continue
+        key = (el.tag if is_h else "block", t.lower())
+        if key in seen and (is_h or len(t) >= 100 or in_dropped):
+            drop(el, "repeated block")
+            if is_h: in_dropped = True
+            continue
+        if is_h: in_dropped = False
+        seen.add(key)
+    # images that belonged to a dropped repeat and were already used earlier
+    imgs = list(root.iter("img"))
+    order = {im: n for n, im in enumerate(imgs)}
+    first = {}
+    for im in imgs: first.setdefault(im.get("src"), order[im])
+    for im in cand:
+        if im in order and im.getparent() is not None and order[im] > first.get(im.get("src"), -1):
+            stats["dropped"]["repeated image"] = stats["dropped"].get("repeated image", 0) + 1; im.drop_tree()
+    # consecutive identical images
+    prev = None
+    for im in list(root.iter("img")):
+        if prev is not None and im.getprevious() is prev and im.get("src") == prev.get("src"):
+            stats["dropped"]["repeated image"] = stats["dropped"].get("repeated image", 0) + 1; im.drop_tree(); continue
+        prev = im
+    # remove wrappers that became empty
+    for _ in range(3):
+        for el in list(root.iter("div", "section", "p", "ul", "ol", "li")):
+            if el is not root and not norm(el.text_content()) and not list(el.iter("img")) and not list(el.iter("br")): el.drop_tree()
 
 def prose_summary(html_str, n=155):
     t = norm(re.sub(r"<[^>]+>", " ", html_str))

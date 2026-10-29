@@ -27,6 +27,7 @@ import {
   Phone,
   Mail,
   Building2,
+  Eye,
 } from "lucide-react";
 import heroImg from "@/assets/hero-team.jpg";
 import ParticlesBg from "@/components/ui/particles-bg";
@@ -678,7 +679,7 @@ function ProductVisual({ k }: { k: string }) {
     </div>
   );
 }
-const PRODUCT_ICONS = { infojoy: Database, intent: Target } as const;
+const PRODUCT_ICONS = { infojoy: Database, intent: Target, traffic: Eye } as const;
 
 export function Products() {
   return (
@@ -691,7 +692,7 @@ export function Products() {
           link={`${MJ}/products/`}
           linkLabel="View all products"
         />
-        <div className="mx-auto grid max-w-4xl gap-5 sm:gap-6 md:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
           {PRODUCTS.map((p, i) => {
             const Icon = PRODUCT_ICONS[p.key];
             const title = p.key === "infojoy" ? "AI-Powered GTM Engine" : p.title;

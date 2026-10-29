@@ -7,7 +7,7 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/09/Construction.webp",
-  "htmlChars": 11403,
+  "htmlChars": 10613,
   "h2": 31,
   "faqs": 5,
   "images": 6,
@@ -15,7 +15,7 @@
   "dropped": {
    "svg": 30,
    "style": 1,
-   "duplicate faq text": 2
+   "faq answer copies outside accordion": 5
   },
   "shortcodes": [],
   "internalLinks": [],
@@ -29,15 +29,16 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/09/Group-1000001978.webp",
-  "htmlChars": 11360,
-  "h2": 33,
+  "htmlChars": 10542,
+  "h2": 30,
   "faqs": 5,
   "images": 8,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 28,
    "style": 1,
-   "duplicate faq text": 2
+   "faq answer copies outside accordion": 5,
+   "step-number heading": 3
   },
   "shortcodes": [],
   "internalLinks": [],
@@ -51,14 +52,15 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/09/flooring-45.webp",
-  "htmlChars": 11045,
-  "h2": 39,
+  "htmlChars": 10232,
+  "h2": 35,
   "faqs": 5,
   "images": 7,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 28,
-   "duplicate faq text": 2
+   "faq answer copies outside accordion": 5,
+   "step-number heading": 4
   },
   "shortcodes": [],
   "internalLinks": [],
@@ -72,13 +74,14 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/10/1-3.webp",
-  "htmlChars": 11148,
-  "h2": 46,
-  "faqs": 0,
+  "htmlChars": 11016,
+  "h2": 32,
+  "faqs": 6,
   "images": 3,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
-   "style": 1
+   "style": 1,
+   "step-number heading": 14
   },
   "shortcodes": [],
   "internalLinks": [],
@@ -92,12 +95,14 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/10/1-2.webp",
-  "htmlChars": 14140,
-  "h2": 49,
-  "faqs": 0,
+  "htmlChars": 14098,
+  "h2": 42,
+  "faqs": 7,
   "images": 2,
   "altFilledFromMediaLibrary": 0,
-  "dropped": {},
+  "dropped": {
+   "step-number heading": 7
+  },
   "shortcodes": [],
   "internalLinks": [],
   "internalLinksNotInIndustries": []
@@ -110,13 +115,14 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/10/image-1-1.webp",
-  "htmlChars": 14769,
-  "h2": 20,
-  "faqs": 0,
+  "htmlChars": 14715,
+  "h2": 12,
+  "faqs": 7,
   "images": 9,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
-   "style": 1
+   "style": 1,
+   "step-number heading": 8
   },
   "shortcodes": [],
   "internalLinks": [],
@@ -130,14 +136,16 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/10/r.webp",
-  "htmlChars": 13790,
-  "h2": 69,
+  "htmlChars": 12579,
+  "h2": 56,
   "faqs": 7,
   "images": 2,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 34,
-   "duplicate faq text": 3
+   "faq answer copies outside accordion": 8,
+   "step-number heading": 12,
+   "repeated block": 1
   },
   "shortcodes": [],
   "internalLinks": [],
@@ -173,14 +181,15 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/04/Group-1000001783.webp",
-  "htmlChars": 8544,
-  "h2": 17,
-  "faqs": 4,
+  "htmlChars": 8338,
+  "h2": 15,
+  "faqs": 5,
   "images": 10,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 12,
-   "duplicate faq text": 12
+   "faq answer copies outside accordion": 12,
+   "step-number heading": 2
   },
   "shortcodes": [
    "contact-form-7"
@@ -200,15 +209,17 @@
   "titleHadVariables": false,
   "robots": "index",
   "ogImage": "/wp-content/uploads/2025/11/Screenshot-2025-11-14-203814.png",
-  "htmlChars": 14318,
-  "h2": 24,
+  "htmlChars": 13317,
+  "h2": 21,
   "faqs": 6,
   "images": 19,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 14,
    "empty 'latest' widget heading": 2,
-   "duplicate faq text": 4
+   "faq answer copies outside accordion": 6,
+   "repeated block": 3,
+   "repeated image": 2
   },
   "shortcodes": [
    "contact-form-7"
@@ -228,7 +239,7 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/04/Chemical-Companies-1.webp",
-  "htmlChars": 9281,
+  "htmlChars": 8800,
   "h2": 20,
   "faqs": 5,
   "images": 14,
@@ -236,7 +247,7 @@
   "dropped": {
    "svg": 15,
    "img(data-uri)": 5,
-   "duplicate faq text": 3
+   "faq answer copies outside accordion": 5
   },
   "shortcodes": [],
   "internalLinks": [
@@ -256,14 +267,16 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/05/Group-1000001996.webp",
-  "htmlChars": 11916,
-  "h2": 28,
+  "htmlChars": 10116,
+  "h2": 26,
   "faqs": 5,
   "images": 20,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 30,
-   "duplicate faq text": 3
+   "faq answer copies outside accordion": 5,
+   "repeated block": 13,
+   "repeated image": 1
   },
   "shortcodes": [],
   "internalLinks": [
@@ -283,14 +296,15 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/07/Group-1000001972.webp",
-  "htmlChars": 9953,
-  "h2": 30,
+  "htmlChars": 8842,
+  "h2": 25,
   "faqs": 4,
   "images": 6,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 33,
-   "duplicate faq text": 1
+   "faq answer copies outside accordion": 4,
+   "step-number heading": 5
   },
   "shortcodes": [],
   "internalLinks": [
@@ -310,14 +324,15 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/07/Pharmaceutical-Life-Science-Chemical-Companies.webp",
-  "htmlChars": 9578,
-  "h2": 29,
+  "htmlChars": 8521,
+  "h2": 24,
   "faqs": 4,
   "images": 6,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 33,
-   "duplicate faq text": 1
+   "faq answer copies outside accordion": 4,
+   "step-number heading": 5
   },
   "shortcodes": [],
   "internalLinks": [
@@ -337,14 +352,16 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/07/Lead-Generation-for-Specialty-Chemical-Companies.webp",
-  "htmlChars": 7545,
-  "h2": 30,
+  "htmlChars": 7010,
+  "h2": 24,
   "faqs": 4,
   "images": 2,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 33,
-   "duplicate faq text": 2
+   "faq answer copies outside accordion": 4,
+   "step-number heading": 5,
+   "repeated block": 1
   },
   "shortcodes": [],
   "internalLinks": [
@@ -366,14 +383,15 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/05/Group-1000001897-1op.webp",
-  "htmlChars": 7869,
-  "h2": 13,
+  "htmlChars": 7248,
+  "h2": 9,
   "faqs": 6,
   "images": 1,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 42,
-   "duplicate faq text": 3
+   "faq answer copies outside accordion": 6,
+   "step-number heading": 4
   },
   "shortcodes": [],
   "internalLinks": [
@@ -417,15 +435,16 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/02/Group-1000001634.webp",
-  "htmlChars": 8154,
-  "h2": 22,
+  "htmlChars": 7793,
+  "h2": 17,
   "faqs": 5,
   "images": 7,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 18,
    "empty 'latest' widget heading": 2,
-   "duplicate faq text": 3
+   "faq answer copies outside accordion": 5,
+   "step-number heading": 5
   },
   "shortcodes": [
    "contact-form-7"
@@ -472,7 +491,7 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2025/12/TreasurySuiteLogo-1.png",
-  "htmlChars": 10246,
+  "htmlChars": 9689,
   "h2": 27,
   "faqs": 7,
   "images": 12,
@@ -480,7 +499,7 @@
   "dropped": {
    "svg": 18,
    "empty 'latest' widget heading": 2,
-   "duplicate faq text": 4
+   "faq answer copies outside accordion": 7
   },
   "shortcodes": [
    "contact-form-7"
@@ -526,7 +545,7 @@
   "titleHadVariables": false,
   "robots": "index",
   "ogImage": "/wp-content/uploads/2025/11/trophy.png",
-  "htmlChars": 11996,
+  "htmlChars": 10641,
   "h2": 9,
   "faqs": 10,
   "images": 14,
@@ -534,7 +553,7 @@
   "dropped": {
    "svg": 20,
    "empty 'latest' widget heading": 2,
-   "duplicate faq text": 6
+   "faq answer copies outside accordion": 11
   },
   "shortcodes": [
    "contact-form-7"
@@ -558,14 +577,15 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/02/Lead-Generation-Services-for-Chemical-Materials-Manufacturers-.webp",
-  "htmlChars": 13878,
+  "htmlChars": 12305,
   "h2": 19,
   "faqs": 12,
   "images": 15,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 37,
-   "duplicate faq text": 7
+   "faq answer copies outside accordion": 12,
+   "repeated block": 1
   },
   "shortcodes": [],
   "internalLinks": [
@@ -585,14 +605,15 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/02/Consumer-Goods-Electronics-Manufacturers.webp",
-  "htmlChars": 13594,
-  "h2": 16,
+  "htmlChars": 11817,
+  "h2": 15,
   "faqs": 10,
   "images": 20,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 25,
-   "duplicate faq text": 5
+   "faq answer copies outside accordion": 10,
+   "repeated block": 1
   },
   "shortcodes": [],
   "internalLinks": [
@@ -614,14 +635,14 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/02/Lead-Generation-Services-for-Contract-Custom-Manufacturing-​.webp",
-  "htmlChars": 12261,
+  "htmlChars": 10674,
   "h2": 16,
   "faqs": 10,
   "images": 9,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 33,
-   "duplicate faq text": 5
+   "faq answer copies outside accordion": 10
   },
   "shortcodes": [],
   "internalLinks": [
@@ -641,14 +662,15 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/03/Energy-banner.webp",
-  "htmlChars": 13513,
-  "h2": 19,
+  "htmlChars": 12085,
+  "h2": 14,
   "faqs": 10,
   "images": 9,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 40,
-   "duplicate faq text": 6
+   "faq answer copies outside accordion": 10,
+   "step-number heading": 5
   },
   "shortcodes": [],
   "internalLinks": [
@@ -668,14 +690,15 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/03/Group-1000001833-1-1.webp",
-  "htmlChars": 10308,
-  "h2": 14,
+  "htmlChars": 8913,
+  "h2": 13,
   "faqs": 10,
   "images": 9,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 29,
-   "duplicate faq text": 5
+   "faq answer copies outside accordion": 10,
+   "repeated block": 1
   },
   "shortcodes": [],
   "internalLinks": [
@@ -693,14 +716,15 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/03/Group-1000001833-1.webp",
-  "htmlChars": 12357,
+  "htmlChars": 10657,
   "h2": 13,
   "faqs": 10,
   "images": 9,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 38,
-   "duplicate faq text": 6
+   "faq answer copies outside accordion": 10,
+   "repeated block": 4
   },
   "shortcodes": [],
   "internalLinks": [
@@ -720,14 +744,16 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/03/Industrial-Heavy-Manufacturing.webp",
-  "htmlChars": 15819,
-  "h2": 18,
+  "htmlChars": 12684,
+  "h2": 19,
   "faqs": 10,
   "images": 21,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 25,
-   "duplicate faq text": 5
+   "faq answer copies outside accordion": 10,
+   "repeated block": 9,
+   "repeated image": 4
   },
   "shortcodes": [],
   "internalLinks": [
@@ -747,7 +773,7 @@
   "titleHadVariables": false,
   "robots": "index",
   "ogImage": "/wp-content/uploads/2026/07/trophy-1.webp",
-  "htmlChars": 13488,
+  "htmlChars": 12128,
   "h2": 8,
   "faqs": 10,
   "images": 14,
@@ -755,7 +781,7 @@
   "dropped": {
    "svg": 20,
    "empty 'latest' widget heading": 1,
-   "duplicate faq text": 6
+   "faq answer copies outside accordion": 11
   },
   "shortcodes": [
    "contact-form-7"
@@ -775,15 +801,16 @@
   "titleHadVariables": false,
   "robots": "index",
   "ogImage": "/wp-content/uploads/2026/02/healthcare.webp",
-  "htmlChars": 11012,
-  "h2": 6,
+  "htmlChars": 9860,
+  "h2": 5,
   "faqs": 6,
   "images": 16,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 12,
    "empty 'latest' widget heading": 2,
-   "duplicate faq text": 3
+   "faq answer copies outside accordion": 6,
+   "repeated block": 1
   },
   "shortcodes": [
    "contact-form-7"
@@ -829,15 +856,16 @@
   "titleHadVariables": false,
   "robots": "index",
   "ogImage": "/wp-content/uploads/2026/04/Group-1000001896.webp",
-  "htmlChars": 13489,
-  "h2": 24,
+  "htmlChars": 11804,
+  "h2": 22,
   "faqs": 8,
   "images": 16,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 19,
    "empty 'latest' widget heading": 1,
-   "duplicate faq text": 4
+   "faq answer copies outside accordion": 8,
+   "repeated block": 2
   },
   "shortcodes": [
    "contact-form-7"
@@ -857,14 +885,14 @@
   "titleHadVariables": false,
   "robots": null,
   "ogImage": "/wp-content/uploads/2026/05/Group-1000001999-2.webp",
-  "htmlChars": 9153,
+  "htmlChars": 8676,
   "h2": 25,
   "faqs": 5,
   "images": 17,
   "altFilledFromMediaLibrary": 0,
   "dropped": {
    "svg": 15,
-   "duplicate faq text": 3
+   "faq answer copies outside accordion": 5
   },
   "shortcodes": [
    "contact-form-7"
