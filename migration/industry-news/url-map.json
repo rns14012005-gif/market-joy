@@ -1,0 +1,86 @@
+[
+ {
+  "old_url": "https://marketjoy.com/industry-news/us-manufacturing-activity-reaches-four-year-high-in-may-2026/",
+  "new_route": "/industry-news/us-manufacturing-activity-reaches-four-year-high-in-may-2026/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 18198
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/abbvie-1-4-billion-north-carolina-campus-investment/",
+  "new_route": "/industry-news/abbvie-1-4-billion-north-carolina-campus-investment/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 15804
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/us-manufacturing-outlook-2026-ai-supply-chain-investment-trends/",
+  "new_route": "/industry-news/us-manufacturing-outlook-2026-ai-supply-chain-investment-trends/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 15791
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/trump-tariff-refund-166-billion-us-business-impact/",
+  "new_route": "/industry-news/trump-tariff-refund-166-billion-us-business-impact/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 15653
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/ford-1-3-billion-refund-us-tariff-reversal/",
+  "new_route": "/industry-news/ford-1-3-billion-refund-us-tariff-reversal/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 15571
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/tariff-refund-process-us-manufacturers/",
+  "new_route": "/industry-news/tariff-refund-process-us-manufacturers/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 15244
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/eco-products-expands-into-the-uk-with-sustainable-packaging-portfolio/",
+  "new_route": "/industry-news/eco-products-expands-into-the-uk-with-sustainable-packaging-portfolio/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 15174
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/intel-debuts-panther-lake-ai-chips-to-boost-laptop-performance-and-efficiency/",
+  "new_route": "/industry-news/intel-debuts-panther-lake-ai-chips-to-boost-laptop-performance-and-efficiency/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 15089
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/fip-acquires-paper-converters-to-strengthen-packaging-portfolio-and-market-presence/",
+  "new_route": "/industry-news/fip-acquires-paper-converters-to-strengthen-packaging-portfolio-and-market-presence/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 14688
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/u-s-government-confirms-4-3-billion-tesla-lg-energy-solution-battery-deal-to-strengthen-domestic-supply-chain/",
+  "new_route": "/industry-news/u-s-government-confirms-4-3-billion-tesla-lg-energy-solution-battery-deal-to-strengthen-domestic-supply-chain/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 14358
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/bel-babybel-recyclable-packaging/",
+  "new_route": "/industry-news/bel-babybel-recyclable-packaging/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 13947
+ },
+ {
+  "old_url": "https://marketjoy.com/industry-news/ai-factory-in-healthcare-roche-nvidia-innovation/",
+  "new_route": "/industry-news/ai-factory-in-healthcare-roche-nvidia-innovation/",
+  "status": "same-path",
+  "redirect_needed": "no",
+  "wp_id": 13564
+ }
+]

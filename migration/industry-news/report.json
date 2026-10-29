@@ -1,0 +1,16 @@
+{
+ "source_records": 12,
+ "converted_records": 12,
+ "failed": 0,
+ "dropped_or_stripped": {
+  "first_heading_duplicates_page_title": 12,
+  "shortcode_related_cards_(dynamic)": 12,
+  "posts_related_cards_(dynamic)": 10
+ },
+ "body_links": {
+  "total": 1,
+  "distinct": 1
+ },
+ "images_with_empty_alt_in_body": 3,
+ "warnings": []
+}

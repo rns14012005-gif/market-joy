@@ -1,0 +1,70 @@
+{
+ "case-studies": {
+  "source_records": 39,
+  "converted_records": 39,
+  "failed": 0,
+  "dropped_or_stripped": {
+   "hero_badge_button_(Case Study / Success Story)": 16,
+   "first_heading_duplicates_page_title": 7,
+   "rating_decorative": 2,
+   "posts_related_cards_(dynamic)": 3,
+   "plain_html_record": 31
+  },
+  "body_links": {
+   "total": 76,
+   "distinct": 22
+  },
+  "images_with_empty_alt_in_body": 159,
+  "warnings": []
+ },
+ "industry-news": {
+  "source_records": 12,
+  "converted_records": 12,
+  "failed": 0,
+  "dropped_or_stripped": {
+   "first_heading_duplicates_page_title": 12,
+   "shortcode_related_cards_(dynamic)": 12,
+   "posts_related_cards_(dynamic)": 10
+  },
+  "body_links": {
+   "total": 1,
+   "distinct": 1
+  },
+  "images_with_empty_alt_in_body": 3,
+  "warnings": []
+ },
+ "press-releases": {
+  "source_records": 1,
+  "converted_records": 1,
+  "failed": 0,
+  "dropped_or_stripped": {
+   "post-info_decorative": 1,
+   "divider_decorative": 3
+  },
+  "body_links": {
+   "total": 4,
+   "distinct": 2
+  },
+  "images_with_empty_alt_in_body": 0,
+  "warnings": []
+ },
+ "testimonials": {
+  "source_records": 38,
+  "converted_records": 38,
+  "with_quote_recovered_from_pages": 35,
+  "without_quote": [
+   "Brielle Jenner",
+   "Jennifer Williams",
+   "Jeff Lipton"
+  ],
+  "export_body_empty": 38,
+  "duplicate_names": [
+   "Sean Cotter"
+  ]
+ },
+ "_images": {
+  "distinct": 238,
+  "already_in_public": 1,
+  "missing_locally": 237
+ }
+}

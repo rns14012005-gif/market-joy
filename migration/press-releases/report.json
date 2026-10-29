@@ -1,0 +1,15 @@
+{
+ "source_records": 1,
+ "converted_records": 1,
+ "failed": 0,
+ "dropped_or_stripped": {
+  "post-info_decorative": 1,
+  "divider_decorative": 3
+ },
+ "body_links": {
+  "total": 4,
+  "distinct": 2
+ },
+ "images_with_empty_alt_in_body": 0,
+ "warnings": []
+}

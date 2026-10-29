@@ -1,0 +1,83 @@
+{
+ "case-studies": {
+  "source_records": 39,
+  "converted_records": 39,
+  "missing_in_output": [],
+  "extra_in_output": [],
+  "duplicate_slugs_in_source": [],
+  "empty_body": [],
+  "malformed_html": {},
+  "images_missing_locally": 211,
+  "broken_internal_links": 0,
+  "routes_valid": true,
+  "status": "PASS"
+ },
+ "industry-news": {
+  "source_records": 12,
+  "converted_records": 12,
+  "missing_in_output": [],
+  "extra_in_output": [],
+  "duplicate_slugs_in_source": [],
+  "empty_body": [],
+  "malformed_html": {},
+  "images_missing_locally": 24,
+  "broken_internal_links": 0,
+  "routes_valid": true,
+  "status": "PASS"
+ },
+ "press-release": {
+  "source_records": 1,
+  "converted_records": 1,
+  "missing_in_output": [],
+  "extra_in_output": [],
+  "duplicate_slugs_in_source": [],
+  "empty_body": [],
+  "malformed_html": {},
+  "images_missing_locally": 2,
+  "broken_internal_links": 0,
+  "routes_valid": true,
+  "status": "PASS"
+ },
+ "joypedia": {
+  "source_records": 153,
+  "converted_records": 153,
+  "missing_in_output": [],
+  "extra_in_output": [],
+  "duplicate_slugs_in_source": [],
+  "empty_body": [],
+  "malformed_html": {},
+  "images_missing_locally": 0,
+  "broken_internal_links": 0,
+  "routes_valid": true,
+  "status": "PASS"
+ },
+ "testimonials": {
+  "source_records": 38,
+  "converted_records": 38,
+  "missing": [],
+  "with_quote": 35,
+  "without_quote": [
+   "Brielle Jenner",
+   "Jennifer Williams",
+   "Jeff Lipton"
+  ],
+  "duplicate_names": [
+   "Sean Cotter"
+  ],
+  "status": "PASS"
+ },
+ "faqs": {
+  "total_questions": 51,
+  "with_answer": 8,
+  "pending_source": 43,
+  "exact_duplicate_questions": [],
+  "status": "PASS"
+ },
+ "_images_missing_by_type": {
+  "case-studies": 211,
+  "industry-news": 24,
+  "press-release": 2,
+  "joypedia": 0
+ },
+ "_broken_links_sample": {}
+}

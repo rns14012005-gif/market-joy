@@ -1,0 +1,18 @@
+{
+ "source_records": 39,
+ "converted_records": 39,
+ "failed": 0,
+ "dropped_or_stripped": {
+  "hero_badge_button_(Case Study / Success Story)": 16,
+  "first_heading_duplicates_page_title": 7,
+  "rating_decorative": 2,
+  "posts_related_cards_(dynamic)": 3,
+  "plain_html_record": 31
+ },
+ "body_links": {
+  "total": 76,
+  "distinct": 22
+ },
+ "images_with_empty_alt_in_body": 159,
+ "warnings": []
+}

@@ -1,0 +1,879 @@
+[
+ {
+  "path": "/construction-lead-generation/",
+  "wpId": 21156,
+  "seoTitle": "Construction Lead Generation Services | MarketJoy",
+  "seoDescriptionChars": 173,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/09/Construction.webp",
+  "htmlChars": 11403,
+  "h2": 31,
+  "faqs": 5,
+  "images": 6,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 30,
+   "style": 1,
+   "duplicate faq text": 2
+  },
+  "shortcodes": [],
+  "internalLinks": [],
+  "internalLinksNotInIndustries": []
+ },
+ {
+  "path": "/construction-lead-generation/architecture/",
+  "wpId": 21735,
+  "seoTitle": "Architecture Firm Lead Generation Services | MarketJoy",
+  "seoDescriptionChars": 159,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/09/Group-1000001978.webp",
+  "htmlChars": 11360,
+  "h2": 33,
+  "faqs": 5,
+  "images": 8,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 28,
+   "style": 1,
+   "duplicate faq text": 2
+  },
+  "shortcodes": [],
+  "internalLinks": [],
+  "internalLinksNotInIndustries": []
+ },
+ {
+  "path": "/construction-lead-generation/flooring/",
+  "wpId": 21368,
+  "seoTitle": "Lead Generation Services for Flooring Companies | MarketJoy",
+  "seoDescriptionChars": 161,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/09/flooring-45.webp",
+  "htmlChars": 11045,
+  "h2": 39,
+  "faqs": 5,
+  "images": 7,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 28,
+   "duplicate faq text": 2
+  },
+  "shortcodes": [],
+  "internalLinks": [],
+  "internalLinksNotInIndustries": []
+ },
+ {
+  "path": "/construction-lead-generation/hvac-lead-generation/",
+  "wpId": 23061,
+  "seoTitle": "HVAC Lead Generation Services to Grow Your Pipeline | MarketJoy",
+  "seoDescriptionChars": 192,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/10/1-3.webp",
+  "htmlChars": 11148,
+  "h2": 46,
+  "faqs": 0,
+  "images": 3,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "style": 1
+  },
+  "shortcodes": [],
+  "internalLinks": [],
+  "internalLinksNotInIndustries": []
+ },
+ {
+  "path": "/construction-lead-generation/painting-business/",
+  "wpId": 22782,
+  "seoTitle": "Painting Lead Generation Services to Reach Commercial Buyers | MarketJoy",
+  "seoDescriptionChars": 165,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/10/1-2.webp",
+  "htmlChars": 14140,
+  "h2": 49,
+  "faqs": 0,
+  "images": 2,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {},
+  "shortcodes": [],
+  "internalLinks": [],
+  "internalLinksNotInIndustries": []
+ },
+ {
+  "path": "/construction-lead-generation/paving-lead-generation-services/",
+  "wpId": 22515,
+  "seoTitle": "Paving Lead Generation Services for Qualified Leads | MarketJoy",
+  "seoDescriptionChars": 173,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/10/image-1-1.webp",
+  "htmlChars": 14769,
+  "h2": 20,
+  "faqs": 0,
+  "images": 9,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "style": 1
+  },
+  "shortcodes": [],
+  "internalLinks": [],
+  "internalLinksNotInIndustries": []
+ },
+ {
+  "path": "/construction-lead-generation/roofing/",
+  "wpId": 22325,
+  "seoTitle": "Lead Generation for Roofing Companies | MarketJoy",
+  "seoDescriptionChars": 166,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/10/r.webp",
+  "htmlChars": 13790,
+  "h2": 69,
+  "faqs": 7,
+  "images": 2,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 34,
+   "duplicate faq text": 3
+  },
+  "shortcodes": [],
+  "internalLinks": [],
+  "internalLinksNotInIndustries": []
+ },
+ {
+  "path": "/industries/",
+  "wpId": 1260,
+  "seoTitle": "Industries-specific Lead Generations Services - MarketJoy",
+  "seoDescriptionChars": 136,
+  "titleHadVariables": false,
+  "robots": "noindex",
+  "ogImage": "/wp-content/uploads/2023/06/Rectangle-4601.png",
+  "htmlChars": 4544,
+  "h2": 5,
+  "faqs": 0,
+  "images": 10,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {},
+  "shortcodes": [],
+  "internalLinks": [
+   "/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/"
+  ]
+ },
+ {
+  "path": "/industries/business-consulting-lead-generation/",
+  "wpId": 14616,
+  "seoTitle": "Lead Generation for Consulting Companies | Business Leads",
+  "seoDescriptionChars": 153,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/04/Group-1000001783.webp",
+  "htmlChars": 8544,
+  "h2": 17,
+  "faqs": 4,
+  "images": 10,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 12,
+   "duplicate faq text": 12
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/chemical-lead-generation/",
+  "wpId": 10315,
+  "seoTitle": "Lead Generation for Chemical Companies | B2B Chemical Leads",
+  "seoDescriptionChars": 154,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2025/11/Screenshot-2025-11-14-203814.png",
+  "htmlChars": 14318,
+  "h2": 24,
+  "faqs": 6,
+  "images": 19,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 14,
+   "empty 'latest' widget heading": 2,
+   "duplicate faq text": 4
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/chemical-lead-generation/basic-and-commodity/",
+  "wpId": 14825,
+  "seoTitle": "Lead Generation for Basic &amp; Commodity Chemical Companies",
+  "seoDescriptionChars": 144,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/04/Chemical-Companies-1.webp",
+  "htmlChars": 9281,
+  "h2": 20,
+  "faqs": 5,
+  "images": 14,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 15,
+   "img(data-uri)": 5,
+   "duplicate faq text": 3
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/aligning-marketing-and-sales-for-better-lead-quality/",
+   "/lead-generation-chemical-companies-b2b-strategies/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/aligning-marketing-and-sales-for-better-lead-quality/",
+   "/lead-generation-chemical-companies-b2b-strategies/"
+  ]
+ },
+ {
+  "path": "/industries/chemical-lead-generation/green-sustainable-chemical-companies/",
+  "wpId": 15151,
+  "seoTitle": "Lead Generation for Green &amp; Sustainable Chemical Companies",
+  "seoDescriptionChars": 151,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/05/Group-1000001996.webp",
+  "htmlChars": 11916,
+  "h2": 28,
+  "faqs": 5,
+  "images": 20,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 30,
+   "duplicate faq text": 3
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/enterprise-lead-generation-services/",
+   "/marketjoy-predictable-sales-pipeline/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/enterprise-lead-generation-services/",
+   "/marketjoy-predictable-sales-pipeline/"
+  ]
+ },
+ {
+  "path": "/industries/chemical-lead-generation/industrial-chemical-companies/",
+  "wpId": 15969,
+  "seoTitle": "Lead Generation for Industrial Chemical Companies |MarketJoy",
+  "seoDescriptionChars": 148,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/07/Group-1000001972.webp",
+  "htmlChars": 9953,
+  "h2": 30,
+  "faqs": 4,
+  "images": 6,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 33,
+   "duplicate faq text": 1
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/b2b-sales-pipeline-conversion-rates-marketjoy-data/",
+   "/lead-generation-chemical-companies-b2b-strategies/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/b2b-sales-pipeline-conversion-rates-marketjoy-data/",
+   "/lead-generation-chemical-companies-b2b-strategies/"
+  ]
+ },
+ {
+  "path": "/industries/chemical-lead-generation/pharmaceutical-life-science/",
+  "wpId": 16346,
+  "seoTitle": "Lead Generation For Pharmaceutical &amp; Life Science Chemical Companies | MarketJoy",
+  "seoDescriptionChars": 147,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/07/Pharmaceutical-Life-Science-Chemical-Companies.webp",
+  "htmlChars": 9578,
+  "h2": 29,
+  "faqs": 4,
+  "images": 6,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 33,
+   "duplicate faq text": 1
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/ai-powered-lead-generation-b2b-sales/",
+   "/marketjoy-predictable-sales-pipeline/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/ai-powered-lead-generation-b2b-sales/",
+   "/marketjoy-predictable-sales-pipeline/"
+  ]
+ },
+ {
+  "path": "/industries/chemical-lead-generation/specialty-chemical-companies/",
+  "wpId": 16476,
+  "seoTitle": "Lead Generation For Specialty Chemical Companies | MarketJoy",
+  "seoDescriptionChars": 142,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/07/Lead-Generation-for-Specialty-Chemical-Companies.webp",
+  "htmlChars": 7545,
+  "h2": 30,
+  "faqs": 4,
+  "images": 2,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 33,
+   "duplicate faq text": 2
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/appointment-generation-setting/",
+   "/best-lead-generation-channels-b2b-leads/",
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/appointment-generation-setting/",
+   "/best-lead-generation-channels-b2b-leads/",
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/e-commerce-online-retail-lead-generation/",
+  "wpId": 15864,
+  "seoTitle": "Ecommerce Lead Generation &amp; Sales Leads | MarketJoy",
+  "seoDescriptionChars": 144,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/05/Group-1000001897-1op.webp",
+  "htmlChars": 7869,
+  "h2": 13,
+  "faqs": 6,
+  "images": 1,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 42,
+   "duplicate faq text": 3
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/top-10-ecommerce-lead-generation-companies-usa/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/top-10-ecommerce-lead-generation-companies-usa/"
+  ]
+ },
+ {
+  "path": "/industries/environmental-and-facilities-lead-generation/",
+  "wpId": 10965,
+  "seoTitle": "Lead Generation for Facilities Management &amp; Environmental Services",
+  "seoDescriptionChars": 159,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2025/12/apollo-bath-logo.png",
+  "htmlChars": 6803,
+  "h2": 9,
+  "faqs": 0,
+  "images": 12,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "empty 'latest' widget heading": 2
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/fintech-lead-generation/",
+  "wpId": 10888,
+  "seoTitle": "FinTech Lead Generation Services | Financial Services Leads",
+  "seoDescriptionChars": 157,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/02/Group-1000001634.webp",
+  "htmlChars": 8154,
+  "h2": 22,
+  "faqs": 5,
+  "images": 7,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 18,
+   "empty 'latest' widget heading": 2,
+   "duplicate faq text": 3
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/food-and-beverages-lead-generation/",
+  "wpId": 10832,
+  "seoTitle": "B2B Lead Generation For Food Companies | MarketJoy",
+  "seoDescriptionChars": 138,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2026/02/Group-1000001644.webp",
+  "htmlChars": 7879,
+  "h2": 8,
+  "faqs": 0,
+  "images": 16,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 7,
+   "empty 'latest' widget heading": 2
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/high-tech-and-software-lead-generation/",
+  "wpId": 11271,
+  "seoTitle": "Lead Generation for IT Services | Software Qualified Leads",
+  "seoDescriptionChars": 156,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2025/12/TreasurySuiteLogo-1.png",
+  "htmlChars": 10246,
+  "h2": 27,
+  "faqs": 7,
+  "images": 12,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 18,
+   "empty 'latest' widget heading": 2,
+   "duplicate faq text": 4
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/industrial-automation-lead-generation/",
+  "wpId": 11049,
+  "seoTitle": "Lead Generation for Automation Companies | B2B Leads",
+  "seoDescriptionChars": 160,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/02/Industrial-Leads-for-Automation-and-Manufacturing-Solutions.webp",
+  "htmlChars": 8167,
+  "h2": 8,
+  "faqs": 0,
+  "images": 14,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "empty 'latest' widget heading": 1
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/manufacturing-lead-generation/",
+  "wpId": 10244,
+  "seoTitle": "Lead Generation for Manufacturing Companies | MarketJoy",
+  "seoDescriptionChars": 164,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2025/11/trophy.png",
+  "htmlChars": 11996,
+  "h2": 9,
+  "faqs": 10,
+  "images": 14,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 20,
+   "empty 'latest' widget heading": 2,
+   "duplicate faq text": 6
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/ai-and-automation-in-manufacturing-lead-generation-the-future-of-sales/",
+   "/contact-us/",
+   "/manufacturing-lead-generation-companies-usa"
+  ],
+  "internalLinksNotInIndustries": [
+   "/ai-and-automation-in-manufacturing-lead-generation-the-future-of-sales/",
+   "/contact-us/",
+   "/manufacturing-lead-generation-companies-usa"
+  ]
+ },
+ {
+  "path": "/industries/manufacturing-lead-generation/chemical-and-materials/",
+  "wpId": 12331,
+  "seoTitle": "Lead Generation Services For Chemical &amp; Materials Manufacturers",
+  "seoDescriptionChars": 157,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/02/Lead-Generation-Services-for-Chemical-Materials-Manufacturers-.webp",
+  "htmlChars": 13878,
+  "h2": 19,
+  "faqs": 12,
+  "images": 15,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 37,
+   "duplicate faq text": 7
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/chemical-industry-b2b-sales-leads-conversion/",
+   "/lead-generation-chemical-companies-b2b-strategies/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/chemical-industry-b2b-sales-leads-conversion/",
+   "/lead-generation-chemical-companies-b2b-strategies/"
+  ]
+ },
+ {
+  "path": "/industries/manufacturing-lead-generation/consumer-goods-electronics/",
+  "wpId": 12451,
+  "seoTitle": "Lead Generation Services for Consumer Goods &amp; Electronics Manufacturers",
+  "seoDescriptionChars": 155,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/02/Consumer-Goods-Electronics-Manufacturers.webp",
+  "htmlChars": 13594,
+  "h2": 16,
+  "faqs": 10,
+  "images": 20,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 25,
+   "duplicate faq text": 5
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/",
+   "/businesses-generate-sales-qualified-leads/",
+   "/cold-email-vs-linkedin-outreach-b2b-lead-generation/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/",
+   "/businesses-generate-sales-qualified-leads/",
+   "/cold-email-vs-linkedin-outreach-b2b-lead-generation/"
+  ]
+ },
+ {
+  "path": "/industries/manufacturing-lead-generation/contract-custom/",
+  "wpId": 12540,
+  "seoTitle": "Contract & Custom Manufacturing for Lead Generation",
+  "seoDescriptionChars": 139,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/02/Lead-Generation-Services-for-Contract-Custom-Manufacturing-​.webp",
+  "htmlChars": 12261,
+  "h2": 16,
+  "faqs": 10,
+  "images": 9,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 33,
+   "duplicate faq text": 5
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/cold-email-vs-linkedin-outreach-b2b-lead-generation/",
+   "/demand-generation-vs-lead-generation/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/cold-email-vs-linkedin-outreach-b2b-lead-generation/",
+   "/demand-generation-vs-lead-generation/"
+  ]
+ },
+ {
+  "path": "/industries/manufacturing-lead-generation/energy-and-environmental/",
+  "wpId": 13011,
+  "seoTitle": "Lead Generation Services for Energy &amp; Environmental Manufacturing",
+  "seoDescriptionChars": 147,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/03/Energy-banner.webp",
+  "htmlChars": 13513,
+  "h2": 19,
+  "faqs": 10,
+  "images": 9,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 40,
+   "duplicate faq text": 6
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/businesses-generate-sales-qualified-leads/",
+   "/lead-generation-in-renewable-energy-clean-tech-sales/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/businesses-generate-sales-qualified-leads/",
+   "/lead-generation-in-renewable-energy-clean-tech-sales/"
+  ]
+ },
+ {
+  "path": "/industries/manufacturing-lead-generation/food-beverage-manufacturers/",
+  "wpId": 13504,
+  "seoTitle": "Lead Generation Solutions for Food &amp; Beverage Manufacturers | MarketJoy",
+  "seoDescriptionChars": 151,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/03/Group-1000001833-1-1.webp",
+  "htmlChars": 10308,
+  "h2": 14,
+  "faqs": 10,
+  "images": 9,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 29,
+   "duplicate faq text": 5
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/top-strategies-for-generating-b2b-leads-in-the-food-beverage-industry/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/top-strategies-for-generating-b2b-leads-in-the-food-beverage-industry/"
+  ]
+ },
+ {
+  "path": "/industries/manufacturing-lead-generation/high-tech-precision-manufacturing/",
+  "wpId": 13312,
+  "seoTitle": "Lead Generation Services for High-Tech &amp; Precision Manufacturing",
+  "seoDescriptionChars": 152,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/03/Group-1000001833-1.webp",
+  "htmlChars": 12357,
+  "h2": 13,
+  "faqs": 10,
+  "images": 9,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 38,
+   "duplicate faq text": 6
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/cold-email-vs-linkedin-outreach-b2b-lead-generation/",
+   "/top-10-lead-generation-companies-usa/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/cold-email-vs-linkedin-outreach-b2b-lead-generation/",
+   "/top-10-lead-generation-companies-usa/"
+  ]
+ },
+ {
+  "path": "/industries/manufacturing-lead-generation/industrial-heavy-manufacturing/",
+  "wpId": 13422,
+  "seoTitle": "Lead Generation Services for Industrial &amp; Heavy Manufacturing",
+  "seoDescriptionChars": 159,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/03/Industrial-Heavy-Manufacturing.webp",
+  "htmlChars": 15819,
+  "h2": 18,
+  "faqs": 10,
+  "images": 21,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 25,
+   "duplicate faq text": 5
+  },
+  "shortcodes": [],
+  "internalLinks": [
+   "/demand-generation-vs-lead-generation/",
+   "/manufacturing-lead-generation-companies-usa/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/demand-generation-vs-lead-generation/",
+   "/manufacturing-lead-generation-companies-usa/"
+  ]
+ },
+ {
+  "path": "/industries/manufacturing-suppliers-lead-generation/",
+  "wpId": 10185,
+  "seoTitle": "6 Proven Strategies for Manufacturing Suppliers Lead Generation | MarketJoy",
+  "seoDescriptionChars": 164,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2026/07/trophy-1.webp",
+  "htmlChars": 13488,
+  "h2": 8,
+  "faqs": 10,
+  "images": 14,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 20,
+   "empty 'latest' widget heading": 1,
+   "duplicate faq text": 6
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/medical-healthcare-lead-generation/",
+  "wpId": 6388,
+  "seoTitle": "Medical &amp; Healthcare Lead Generation Services | MarketJoy",
+  "seoDescriptionChars": 154,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2026/02/healthcare.webp",
+  "htmlChars": 11012,
+  "h2": 6,
+  "faqs": 6,
+  "images": 16,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 12,
+   "empty 'latest' widget heading": 2,
+   "duplicate faq text": 3
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/renewable-energy-lead-generation/",
+  "wpId": 11820,
+  "seoTitle": "Lead generation for energy Companies|Renewable energy Leads",
+  "seoDescriptionChars": 150,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/01/Frame-1.png",
+  "htmlChars": 5161,
+  "h2": 9,
+  "faqs": 0,
+  "images": 6,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "empty 'latest' widget heading": 2
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/shipping-and-supply-chain-logistics-lead-generation/",
+  "wpId": 10032,
+  "seoTitle": "Lead Generation for Logistics Companies | Logistics Sales Leads",
+  "seoDescriptionChars": 161,
+  "titleHadVariables": false,
+  "robots": "index",
+  "ogImage": "/wp-content/uploads/2026/04/Group-1000001896.webp",
+  "htmlChars": 13489,
+  "h2": 24,
+  "faqs": 8,
+  "images": 16,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 19,
+   "empty 'latest' widget heading": 1,
+   "duplicate faq text": 4
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ },
+ {
+  "path": "/industries/utilities-lead-generation/",
+  "wpId": 15666,
+  "seoTitle": "Lead Generation for Utility Companies | MarketJoy",
+  "seoDescriptionChars": 159,
+  "titleHadVariables": false,
+  "robots": null,
+  "ogImage": "/wp-content/uploads/2026/05/Group-1000001999-2.webp",
+  "htmlChars": 9153,
+  "h2": 25,
+  "faqs": 5,
+  "images": 17,
+  "altFilledFromMediaLibrary": 0,
+  "dropped": {
+   "svg": 15,
+   "duplicate faq text": 3
+  },
+  "shortcodes": [
+   "contact-form-7"
+  ],
+  "internalLinks": [
+   "/contact-us/"
+  ],
+  "internalLinksNotInIndustries": [
+   "/contact-us/"
+  ]
+ }
+]

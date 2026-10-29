@@ -1,0 +1,28 @@
+{
+ "source_records": 153,
+ "converted_records": 153,
+ "elementor": 144,
+ "plain_html": 9,
+ "dropped_widgets": {
+  "title_heading_duplicated_in_hero": 144,
+  "cta_label_heading": 135,
+  "posts_widget_heading:Latest Blogs": 144,
+  "posts_widget": 288,
+  "posts_widget_heading:Latest Case Studies": 144
+ },
+ "links_in_body": {
+  "total": 27,
+  "distinct": 16
+ },
+ "consecutive_duplicate_paragraphs_removed": [
+  {
+   "slug": "sales-enablement",
+   "removed_text": "Reduces ramp-up time for new hires"
+  },
+  {
+   "slug": "retention-rate",
+   "removed_text": "Supports predictable revenue growth"
+  }
+ ],
+ "warnings": []
+}
