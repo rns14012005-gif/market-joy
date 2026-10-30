@@ -6,7 +6,7 @@ import path from "node:path";
 
 const ORIGIN = "https://marketjoy.com";
 const found = new Set();
-const grab = (text) => { for (const m of text.matchAll(/\/wp-content\/[^"'\s)\\<>]+\.(?:png|jpe?g|webp|svg|gif|avif)/gi)) found.add(m[0]); };
+const grab = (text) => { for (const m of text.matchAll(/\/wp-content\/[^"'\s,)\\<>]+\.(?:png|jpe?g|webp|svg|gif|avif)/gi)) found.add(m[0]); };
 
 for (const csv of ["industries-images", "about-images", "products-images"]) {
   try { grab(await readFile(`migration/${csv}.csv`, "utf8")); } catch {}
