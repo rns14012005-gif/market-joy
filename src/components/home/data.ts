@@ -24,8 +24,6 @@ export const NAV: NavGroup[] = [
     label: "Products",
     items: [
       { label: "InfoJoy", href: `${MJ}/products/infojoy/` },
-      { label: "Buyer Intent", href: `${MJ}/products/buyer-intent/` },
-      { label: "Web Traffic Revealer", href: `${MJ}/products/web-traffic-revealer/` },
     ],
   },
   {
@@ -257,18 +255,6 @@ export const PRODUCTS = [
     title: "InfoJoy",
     desc: "The AI-Powered GTM engine, powered by 310M+ B2B profiles, to find and reach real decision-makers.",
     href: `${MJ}/products/infojoy/`,
-  },
-  {
-    key: "intent",
-    title: "Buyer Intent",
-    desc: "Identify and prioritize prospects actively researching solutions like yours, so your team engages at the right time.",
-    href: `${MJ}/products/buyer-intent/`,
-  },
-  {
-    key: "traffic",
-    title: "Web Traffic Revealer",
-    desc: "Reveal the anonymous companies visiting your website and turn that hidden traffic into qualified sales conversations.",
-    href: `${MJ}/products/web-traffic-revealer/`,
   },
 ] as const;
 

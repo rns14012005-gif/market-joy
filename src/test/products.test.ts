@@ -16,16 +16,23 @@ const PRODUCT_PATHS = SERVICES_INDEX.filter((i) => i.kind === "product").map((i)
 const read = (p: string) => readFileSync(resolve(process.cwd(), p), "utf8");
 
 describe("products section", () => {
-  it("has the hub plus InfoJoy, Buyer Intent and Web Traffic Revealer", () => {
+  it("has only the hub and InfoJoy (Buyer Intent and Web Traffic Revealer were removed)", () => {
     expect(PRODUCT_PATHS.sort()).toEqual(
-      [
-        "/products/",
-        "/products/buyer-intent/",
-        "/products/infojoy/",
-        "/products/web-traffic-revealer/",
-      ].sort(),
+      ["/products/", "/products/infojoy/"].sort(),
     );
     for (const p of PRODUCT_PATHS) expect(PRODUCT_META[p], p).toBeDefined();
+  });
+
+  it("removed products are gone everywhere and old URLs redirect to the hub", async () => {
+    for (const p of ["/products/buyer-intent/", "/products/web-traffic-revealer/"]) {
+      expect(isServicePath(p), p).toBe(false);
+      expect(PRODUCT_META[p], p).toBeUndefined();
+      expect(REDIRECTS[p.replace(/\/$/, "")], p).toBe("/products/");
+      expect(read("public/sitemap-services.xml"), p).not.toContain(p);
+      expect(PRODUCTS.some((c) => c.href === p), `homepage card for ${p}`).toBe(false);
+    }
+    const hub = (await loadServiceByPath("/products/"))!;
+    expect(hub.html).not.toMatch(/buyer-intent|web-traffic-revealer|Web Traffic Revealer/);
   });
 
   it("hub links to every product, and the homepage cards do too", async () => {

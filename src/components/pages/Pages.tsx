@@ -28,10 +28,10 @@ import {
   FAQS,
   PILLARS,
   STORIES,
-  TEAM_ROLES,
   TESTIMONIALS,
 } from "@/components/home/data";
 import { BlogListing } from "./BlogPages";
+import { AboutBody, CurtisBody } from "./AboutPages";
 import { VendorsDirectory } from "./VendorPages";
 import { ALL_PAGES, INDUSTRY_TOP, PRODUCT_LIST, SERVICE_LIST, type PageDef } from "./content";
 
@@ -357,58 +357,6 @@ function IndustryPage({ page }: { page: PageDef }) {
   );
 }
 
-function About({ page }: { page: PageDef }) {
-  const values = [
-    ["Transparency", "Clear reporting and bi-weekly reviews. You always know what's happening."],
-    ["Empathy", "We work as an extension of your team and listen first."],
-    ["Performance", "A 100% SQL Guarantee keeps us focused on the results you care about."],
-  ];
-  return (
-    <>
-      <Intro
-        page={{
-          ...page,
-          bullets: [
-            "Founded in 2016",
-            "Headquartered in Pensacola, Florida",
-            "InfoJoy GTM engine with 310M+ B2B profiles",
-            "100% SQL Guarantee",
-          ],
-        }}
-      />
-      <section className="section-y bg-muted">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <SectionHead eyebrow="Our values" title="What We Stand For" />
-          <div className="grid cols-3 gap-5">
-            {values.map(([t, d], i) => (
-              <Reveal key={t} from={slide(i)} delay={i * 90}>
-                <div className="card-glow h-full p-5 sm:p-7">
-                  <h3 className="text-xl font-bold">{t}</h3>
-                  <p className="mt-2 text-muted-foreground">{d}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="section-y">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <SectionHead eyebrow="Your team" title="Every Client Is Paired With a Seasoned Team" />
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {TEAM_ROLES.map((r) => (
-              <div key={r} className="flex items-center gap-3 rounded-xl border bg-card p-4">
-                <Check className="h-5 w-5 text-gold" />
-                <span className="font-medium">{r}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <Pillars />
-    </>
-  );
-}
-
 function Contact() {
   const [sent, setSent] = useState(false);
   const submit = (e: FormEvent<HTMLFormElement>) => {
@@ -634,7 +582,8 @@ export function SitePage({ path }: { path: string }) {
     service: <ServiceLike page={page} />,
     product: <ServiceLike page={page} />,
     industry: <IndustryPage page={page} />,
-    about: <About page={page} />,
+    about: <AboutBody />,
+    member: <CurtisBody />,
     contact: <Contact />,
     blog: <BlogListing />,
     faqs: <FaqFull />,
@@ -650,7 +599,7 @@ export function SitePage({ path }: { path: string }) {
       <main>
         <PageHero page={page} />
         {body}
-        {page.kind !== "contact" && <FinalCta />}
+        {page.kind !== "contact" && page.kind !== "about" && <FinalCta />}
       </main>
       <Footer />
     </>

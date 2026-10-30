@@ -53,8 +53,6 @@ export async function loadServiceByPath(p: string): Promise<ServiceEntry | null>
 export const PRODUCT_META: Record<string, { label: string; serviceType: string }> = {
   "/products/": { label: "Products", serviceType: "B2B prospecting products" },
   "/products/infojoy/": { label: "InfoJoy", serviceType: "B2B buyer intent prospecting platform" },
-  "/products/buyer-intent/": { label: "Buyer Intent", serviceType: "B2B buyer intent data" },
-  "/products/web-traffic-revealer/": { label: "Web Traffic Revealer", serviceType: "Anonymous website visitor identification" },
 };
 
 export const isServicePath = (p: string) => SERVICES_INDEX.some((i) => i.path === norm(p));

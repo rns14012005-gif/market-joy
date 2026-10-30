@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { Navbar } from "@/components/home/Navbar";
 import { FinalCta, Footer } from "@/components/home/Sections";
 import { Hero } from "@/components/pages/ContentPages";
+import { InfoJoyBody, ProductsHubBody } from "@/components/pages/ProductPages";
 import { useWpImageFallback } from "@/lib/wp-images";
 import { PRODUCT_META, SERVICES_INDEX, type ServiceEntry } from "@/content/services/loader";
 
@@ -18,6 +19,20 @@ export function ServiceEntryPage({ entry }: { entry: ServiceEntry }) {
       : [{ label: entry.title }];
   // The hub body already links to each product; don't repeat the title-only list under it.
   const children = isIndex ? [] : SERVICES_INDEX.filter((i) => i.parent === entry.path);
+  // The hub and InfoJoy have hand-built section layouts (copy + SEO stay in the JSON entries).
+  const custom = isIndex ? <ProductsHubBody /> : entry.path === "/products/infojoy/" ? <InfoJoyBody entry={entry} /> : null;
+  if (custom) {
+    return (
+      <>
+        <Navbar />
+        <main>
+          <Hero eyebrow="Products" title={entry.title} crumbs={crumbs} />
+          {custom}
+        </main>
+        <Footer />
+      </>
+    );
+  }
   return (
     <>
       <Navbar />

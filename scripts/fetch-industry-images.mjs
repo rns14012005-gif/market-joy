@@ -8,10 +8,14 @@ const ORIGIN = "https://marketjoy.com";
 const found = new Set();
 const grab = (text) => { for (const m of text.matchAll(/\/wp-content\/[^"'\s)\\<>]+\.(?:png|jpe?g|webp|svg|gif|avif)/gi)) found.add(m[0]); };
 
-grab(await readFile("migration/industries-images.csv", "utf8"));
-for (const dir of ["src/content/industries/layouts", "src/content/industries/entries", "src/components/pages"]) {
-  for (const f of await readdir(dir)) if (/\.(json|tsx)$/.test(f)) grab(await readFile(path.join(dir, f), "utf8"));
+for (const csv of ["industries-images", "about-images", "products-images"]) {
+  try { grab(await readFile(`migration/${csv}.csv`, "utf8")); } catch {}
 }
+// Industry pages, About page + team, and the product pages (hub + InfoJoy).
+for (const dir of ["src/content/industries/layouts", "src/content/industries/entries", "src/components/pages", "src/content/about", "src/content/services"]) {
+  for (const f of await readdir(dir)) if (/\.(json|tsx?)$/.test(f)) grab(await readFile(path.join(dir, f), "utf8"));
+}
+for (const f of ["products.json", "products__infojoy.json"]) grab(await readFile(path.join("src/content/services/entries", f), "utf8"));
 const list = [...found].sort();
 console.log(`${list.length} images referenced`);
 if (process.argv.includes("--list")) { console.log(list.join("\n")); process.exit(0); }

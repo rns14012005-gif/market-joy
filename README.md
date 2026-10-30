@@ -22,3 +22,10 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Images from the old site
+
+The About, Products and InfoJoy pages use files from `https://marketjoy.com/wp-content/...`. `npm run dev` / `npm run build`
+download any that are missing into `public/` (see `scripts/fetch-industry-images.mjs`; run it by hand with
+`npm run images:industries`). Until a file is downloaded the page loads it straight from marketjoy.com, and if that fails
+too it shows a neutral placeholder instead of a broken image.

@@ -17,7 +17,6 @@ import {
   Newspaper,
   DollarSign,
   Target,
-  Radar,
   TrendingUp,
   BarChart3,
   Linkedin,
@@ -27,7 +26,6 @@ import {
   Phone,
   Mail,
   Building2,
-  Eye,
 } from "lucide-react";
 import heroImg from "@/assets/hero-team.jpg";
 import ParticlesBg from "@/components/ui/particles-bg";
@@ -533,7 +531,7 @@ export function Bundle() {
           eyebrow="Add-on"
           title="AI GTM Managed Services with Performance Guarantee"
           sub="We combine AI-powered intelligence with human expertise to find, engage and convert your ideal buyers — and we back it with a performance guarantee."
-          link={`${MJ}/products/web-traffic-revealer/`}
+          link={`${MJ}/b2b-lead-generation-services/`}
           linkLabel="Learn more"
         />
         <div className="cards-5">
@@ -620,66 +618,21 @@ export function Industries() {
 }
 
 /* ---------------- PRODUCTS ---------------- */
-function ProductVisual({ k }: { k: string }) {
-  if (k === "infojoy")
-    return (
-      <div className="space-y-2">
-        {["Company", "Industry", "Decision-maker", "Location"].map((f, i) => (
-          <div
-            key={f}
-            className="flex items-center justify-between rounded-md bg-muted px-3 py-2 text-xs"
-          >
-            <span className="text-muted-foreground">{f}</span>
-            <span
-              className="h-2 rounded-full bg-brand-blue/30"
-              style={{ width: `${40 + i * 12}%` }}
-            />
-          </div>
-        ))}
-      </div>
-    );
-  if (k === "intent")
-    return (
-      <div className="space-y-2">
-        {[
-          ["Actively researching", 90],
-          ["Comparing solutions", 70],
-          ["Content engagement", 55],
-        ].map(([l, w]) => (
-          <div key={l as string} className="rounded-md bg-muted px-3 py-2 text-xs">
-            <div className="flex justify-between">
-              <span>{l}</span>
-              <Radar className="h-3.5 w-3.5 text-gold" />
-            </div>
-            <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-secondary">
-              <div
-                className="bar-grow h-full rounded-full bg-gold"
-                style={{ width: `${w}%`, transformOrigin: "left" }}
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-    );
+function ProductVisual() {
   return (
     <div className="space-y-2">
-      {["Outbound campaign", "Organic search", "Direct visit"].map((s, i) => (
+      {["Company", "Industry", "Decision-maker", "Location"].map((f, i) => (
         <div
-          key={s}
+          key={f}
           className="flex items-center justify-between rounded-md bg-muted px-3 py-2 text-xs"
         >
-          <span>{s}</span>
-          <span
-            className={`rounded-full px-2 py-0.5 text-[10px] font-semibold ${i === 0 ? "bg-gold/25 text-navy" : "bg-accent text-brand-blue"}`}
-          >
-            {i === 0 ? "Attributed" : "Tracked"}
-          </span>
+          <span className="text-muted-foreground">{f}</span>
+          <span className="h-2 rounded-full bg-brand-blue/30" style={{ width: `${40 + i * 12}%` }} />
         </div>
       ))}
     </div>
   );
 }
-const PRODUCT_ICONS = { infojoy: Database, intent: Target, traffic: Eye } as const;
 
 export function Products() {
   return (
@@ -689,33 +642,32 @@ export function Products() {
           eyebrow="Our products"
           title="Powerful Tools to Supercharge Your Outreach"
           sub="Our proprietary tools help you identify, engage and convert the right prospects faster."
-          link={`${MJ}/products/`}
-          linkLabel="View all products"
         />
-        <div className="mx-auto grid max-w-6xl gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {PRODUCTS.map((p, i) => {
-            const Icon = PRODUCT_ICONS[p.key];
-            const title = p.key === "infojoy" ? "AI-Powered GTM Engine" : p.title;
-            return (
-              <Reveal key={p.key} from={slide(i)} delay={i * 90}>
-                <a href={p.href} className="card-glow flex h-full flex-col p-6">
+        <div className="mx-auto grid max-w-4xl gap-5 sm:gap-6">
+          {PRODUCTS.map((p, i) => (
+            <Reveal key={p.key} from={slide(i)} delay={i * 90}>
+              <a
+                href={p.href}
+                className="card-glow grid h-full gap-6 p-6 sm:p-8 md:grid-cols-[1.1fr_1fr] md:items-center md:gap-10"
+              >
+                <div className="min-w-0">
                   <div className="flex items-center gap-3">
                     <span className="icon-anim grid h-11 w-11 shrink-0 icon-tile place-items-center rounded-xl bg-gold/15">
-                      <FxIcon icon={Icon} className="h-5 w-5 text-navy" />
+                      <FxIcon icon={Database} className="h-5 w-5 text-navy" />
                     </span>
-                    <h3 className="text-xl font-bold">{title}</h3>
+                    <h3 className="text-xl font-bold sm:text-2xl">AI-Powered GTM Engine</h3>
                   </div>
-                  <p className="mt-4 text-sm text-muted-foreground">{p.desc}</p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-blue">
+                  <p className="mt-4 text-muted-foreground">{p.desc}</p>
+                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-blue">
                     Learn more <ArrowRight className="arrow h-4 w-4" />
                   </span>
-                  <div className="mt-6 rounded-xl border p-3">
-                    <ProductVisual k={p.key} />
-                  </div>
-                </a>
-              </Reveal>
-            );
-          })}
+                </div>
+                <div className="min-w-0 rounded-xl border p-3 sm:p-4">
+                  <ProductVisual />
+                </div>
+              </a>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

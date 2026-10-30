@@ -10,7 +10,7 @@ export const REDIRECTS: Record<string, string> = {
   "/65-percent-entrepreneurs-struggling-2024": "/blog/lead-generation-solutions-2024/",
   "/ai-powered-lead-generation-how-artificial-intelligence-is-changing-b2b-sales": "/blog/artificial-intelligence-is-changing-b2b-sales/",
   "/align-sales-marketing-strategies": "/blog/align-sales-and-marketing-strategies-to-boost-revenue/",
-  "/author/curtis-bendt": "/about/", // fallback: destination page is not in the new site yet
+  "/author/curtis-bendt": "/curtis-bendt/", // Rank Math: author/curtis-bendt -> curtis-bendt (active)
   "/b2b-landing-page": "/guaranteed-sales-qualified-leads/",
   "/b2b-lead-gen-success-roi-metrics-2024": "/blog/b2b-lead-generation-key-metrics-2024/",
   "/b2b-lead-generation-main-page": "/b2b-lead-generation-services/",
@@ -19,7 +19,9 @@ export const REDIRECTS: Record<string, string> = {
   "/best-practices-for-generating-healthcare-b2b-leads-in-2025": "/blog/best-practices-for-generating-healthcare-b2b-leads/",
   "/boost-revenue-fast-by-aligning-sales-marketing": "/blog/align-sales-and-marketing-strategies-to-boost-revenue/",
   "/business-growth-challenges-2024": "/blog/lead-generation-solutions-2024/",
-  "/buyer-intent": "/products/buyer-intent/",
+  "/buyer-intent": "/products/", // product page removed from the new site
+  "/products/buyer-intent": "/products/", // removed product
+  "/products/web-traffic-revealer": "/products/", // removed product
   "/buyer-intent-read-minds-with-ai-to-go-from-spam-to-sale-2": "/blog/buyer-intent-sales-conversion/",
   "/case-categories/seo": "/case-studies/", // fallback: destination page is not in the new site yet
   "/case-studies/35-high-value-leads-in-90-days-how-marketjoy-boosted-biddle": "/case-studies/marketjoy-biddle-consulting-lead-generation-success/",

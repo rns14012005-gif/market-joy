@@ -3,7 +3,7 @@ import { SERVICES_INDEX, loadServiceByPath } from "@/content/services/loader";
 import { REDIRECTS } from "@/content/redirects";
 
 describe("services + products migration", () => {
-  it("migrated all 17 old service/product URLs", () => expect(SERVICES_INDEX.length).toBe(17));
+  it("migrated the old service/product URLs (15 after removing Buyer Intent and Web Traffic Revealer)", () => expect(SERVICES_INDEX.length).toBe(15));
   it("every entry has SEO title, description and a non-empty body", async () => {
     for (const i of SERVICES_INDEX) {
       const e = await loadServiceByPath(i.path);

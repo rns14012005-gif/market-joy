@@ -13,6 +13,7 @@ import { FAQS } from "@/components/home/data";
 import { findSummary, loadPost } from "@/data/blog/blog";
 import { VENDORS_LABEL, VENDORS_PATH, loadVendor } from "@/data/vendors/vendors";
 import { REDIRECTS } from "@/content/redirects";
+import { CURTIS } from "@/content/about/about";
 import { loadJoypedia } from "@/content/joypedia/loader";
 import { CPT, CPT_BY_SEGMENT, CPT_META, type CptType } from "@/content/cpt";
 import {
@@ -31,7 +32,7 @@ import {
 type Params = { _splat?: string; "*"?: string };
 const splatOf = (p: Params) => p._splat ?? p["*"] ?? "";
 // Every loader branch returns the same keys (TypeScript needs a consistent shape).
-const NONE = { industry: null, service: null, post: null, vendor: null, term: null, cptType: null, entry: null, crumb: null } as const;
+const NONE = { industry: null, service: null, post: null, vendor: null, term: null, cptType: null, entry: null, crumb: null, image: null } as const;
 
 export const Route = createFileRoute("/$")({
   loader: async ({ params }) => {
@@ -172,9 +173,11 @@ export const Route = createFileRoute("/$")({
       ...NONE,
       path: page.path,
       kind: page.kind as string,
-      title: page.title,
+      title: page.seoTitle ?? page.title,
       description: page.metaDescription,
       parent: page.parent ?? null,
+      crumb: page.title,
+      image: (page.ogImage ?? null) as string | null,
     };
   },
   head: ({ loaderData }) => {
@@ -188,6 +191,7 @@ export const Route = createFileRoute("/$")({
       title,
       description: loaderData.description,
       path: loaderData.path,
+      ...(loaderData.image ? { image: loaderData.image } : {}),
       ...(post
         ? {
             image: post.image,
@@ -289,6 +293,21 @@ export const Route = createFileRoute("/$")({
                       image: absUrl(svc.seo.ogImage || "/og-image.png").replace(/\/$/, ""),
                     }),
               ),
+            ]
+          : []),
+        // /curtis-bendt/: schema.org Person (name, title and employer exactly as on the page).
+        ...(loaderData.kind === "member"
+          ? [
+              jsonLd({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: CURTIS.name,
+                jobTitle: CURTIS.role,
+                image: absUrl(CURTIS.image).replace(/\/$/, ""),
+                url: absUrl(loaderData.path),
+                sameAs: [CURTIS.linkedin],
+                worksFor: { "@type": "Organization", name: "MarketJoy, Inc.", url: SITE_URL },
+              }),
             ]
           : []),
         // Vendor pages show their FAQs in an accordion, so the FAQ schema matches visible content.

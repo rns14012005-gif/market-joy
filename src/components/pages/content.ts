@@ -1,3 +1,5 @@
+import { ABOUT_SEO, CURTIS } from "@/content/about/about";
+
 export type Kind =
   | "service"
   | "product"
@@ -10,7 +12,8 @@ export type Kind =
   | "reviews"
   | "external"
   | "productsIndex"
-  | "vendors";
+  | "vendors"
+  | "member";
 
 export type PageDef = {
   path: string;
@@ -25,6 +28,10 @@ export type PageDef = {
   children?: { label: string; href: string }[] | undefined;
   external?: string;
   metaDescription: string;
+  /** <title> when it differs from the on-page H1 (Rank Math title from the old site). */
+  seoTitle?: string;
+  /** Absolute og:image / twitter:image URL. */
+  ogImage?: string;
 };
 
 const LIVE = "https://marketjoy.com";
@@ -201,32 +208,6 @@ const PRODUCTS: Record<string, Core> = {
       "Filter by company, industry, decision-maker and location",
       "Built for outbound campaigns",
       "Powers our hand-curated lists",
-    ],
-  },
-  "buyer-intent": {
-    title: "Buyer Intent",
-    tagline: "Identify and prioritize prospects actively researching solutions like yours.",
-    intro: [
-      "Buyer intent data shows which accounts are in-market right now, so your team engages high-value opportunities at the right time.",
-    ],
-    bullets: [
-      "Spot actively researching accounts",
-      "Prioritize outreach by buying signals",
-      "Compare solution research and content engagement",
-      "Integrated into our campaign strategy",
-    ],
-  },
-  "web-traffic-revealer": {
-    title: "Web Traffic Revealer",
-    tagline: "Monitor and attribute traffic from outbound and inbound sources.",
-    intro: [
-      "Installed on your site, Web Traffic Revealer gives you clearer insight into buyer behaviour and which campaigns bring visitors.",
-    ],
-    bullets: [
-      "Attribute outbound and inbound traffic",
-      "See which accounts visit your site",
-      "Behavioral data feeds campaign optimization",
-      "Fully managed installation and reporting",
     ],
   },
 };
@@ -490,7 +471,7 @@ add({
   tagline:
     "Proprietary tools that help you identify, engage and convert the right prospects faster.",
   intro: [
-    "InfoJoy, Buyer Intent and Web Traffic Revealer work together with our outbound teams to power every campaign.",
+    "InfoJoy works together with our outbound teams to power every campaign.",
   ],
 });
 
@@ -506,11 +487,22 @@ add({
   kind: "about",
   title: "About MarketJoy",
   eyebrow: "About us",
-  tagline: "Committed partners in your business sales and profitability.",
-  intro: [
-    "MarketJoy, Inc. is a B2B lead generation and sales development partner founded in 2016 and based in Pensacola, Florida.",
-    "Rooted in transparency, empathy, and performance, we collaborate closely with you to deliver sales-qualified leads and a pipeline you can plan around.",
-  ],
+  tagline: "Empowering businesses with predictable, scalable growth.",
+  metaDescription: ABOUT_SEO.description,
+  seoTitle: ABOUT_SEO.title,
+  ogImage: ABOUT_SEO.ogImage,
+  intro: [],
+});
+add({
+  path: "/curtis-bendt",
+  kind: "member",
+  title: CURTIS.name,
+  eyebrow: CURTIS.role,
+  tagline: "Global lead generation, telesales and revenue growth leader.",
+  metaDescription: CURTIS.seo.description,
+  seoTitle: CURTIS.seo.title,
+  parent: { label: "About Us", href: "/about/" },
+  intro: [],
 });
 add({
   path: "/contact-us",
